@@ -23,5 +23,12 @@
       "--global-config",
       "${workspaceFolder}/pcb/scripting/autopep.ini",
     ],
+    "files.associations": {
+      "*.mat": "yaml",
+      "macros.h": "c",
+      "defines.h": "c",
+      "*.def": "c",
+      "defintion.h": "c"
+    },
   }
 }

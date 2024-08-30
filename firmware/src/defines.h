@@ -4,24 +4,20 @@
 enum LAYERS {
   BASE,
   LOWER,
-  RAISE,  
+  RAISE,
   COMBO,
   GAME,
 };
 
-enum OS_TYPES {
-  OS_WIN,
-  OS_MAC,
-  OS_LST
-};
+enum OS_TYPES { OS_WIN, OS_MAC, OS_LST };
 
 #define LT_L LT(1, KC_SPC)
 #define LT_R LT(2, KC_SPC)
 #define LT_C LT(3, KC_SPC)
 
 #define xxxxxxx KC_NO
-#define CK_OS  QK_USER_31
-#define CK_NO  QK_UNICODE_MAX
+#define CK_OS QK_USER_31
+#define CK_NO QK_UNICODE_MAX
 
 #define CK_00 QK_KB_0
 #define CK_01 QK_KB_1
@@ -97,23 +93,23 @@ enum OS_TYPES {
 #define MOD_MASK_SHIFT_R (MOD_BIT(KC_RSFT))
 
 typedef struct {
-  bool NONE     : 1;
-  bool CTRL     : 1;
-  bool CTRL_L   : 1;
-  bool CTRL_R   : 1;
-  bool ALT      : 1;
-  bool ALT_L    : 1;
-  bool ALT_R    : 1;
-  bool GUI      : 1;
-  bool GUI_L    : 1;
-  bool GUI_R    : 1;
-  bool SHIFT    : 1;
-  bool SHIFT_L  : 1;
-  bool SHIFT_R  : 1;
+  bool NONE : 1;
+  bool CTRL : 1;
+  bool CTRL_L : 1;
+  bool CTRL_R : 1;
+  bool ALT : 1;
+  bool ALT_L : 1;
+  bool ALT_R : 1;
+  bool GUI : 1;
+  bool GUI_L : 1;
+  bool GUI_R : 1;
+  bool SHIFT : 1;
+  bool SHIFT_L : 1;
+  bool SHIFT_R : 1;
 } ModState;
 
 typedef struct {
-  bool pressed;
+  bool     pressed;
   uint16_t kc;
 } CustomKey;
 
@@ -126,34 +122,34 @@ typedef struct {
 } TabbingState;
 
 typedef struct {
-  uint8_t state;
+  uint8_t  state;
   uint16_t time;
   uint16_t timer;
   uint16_t last_timer;
-  bool enabled : 1;
-  bool running : 1;
-  bool exec : 1;
-  bool caps : 1;
+  bool     enabled : 1;
+  bool     running : 1;
+  bool     exec : 1;
+  bool     caps : 1;
 } StatsState;
 
 typedef struct {
-  bool active : 1;
-  int taps;
+  bool     active : 1;
+  int      taps;
   uint16_t timer;
 } HypeState;
 
 typedef union {
   struct {
-    uint8_t layer;
-    bool pressed : 1;
-    ModState mods;
+    uint8_t      layer;
+    bool         pressed : 1;
+    ModState     mods;
     TabbingState tabbing;
-    StatsState stats;
-    uint16_t snap_tap[2];
-    HypeState hype;
-    CustomKey keys[MATRIX_ROWS][MATRIX_COLS];
+    StatsState   stats;
+    uint16_t     snap_tap[2];
+    HypeState    hype;
+    CustomKey    keys[MATRIX_ROWS][MATRIX_COLS];
   };
 } State;
 
-extern State state;
+extern State  state;
 extern int8_t OS;

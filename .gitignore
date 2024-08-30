@@ -4,3 +4,8 @@
 *~
 .DS_Store
 ._*
+
+
+*.hex
+*.elf
+*.uf2
