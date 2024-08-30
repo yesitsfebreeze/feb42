@@ -17,12 +17,8 @@ jobs:
 
   publish:
     name: 'QMK Publish'
-    uses: qmk/.github/.github/workflows/qmk_userspace_publish.yml@main
+    uses: softprops/action-gh-release@v1
     if: always() && !cancelled()
-    steps:
-      - name: Upload compiled firmware (tagged release)
-        uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
-        with:
+    with:
           files: |
             qmk_firmware/firmware.bin
