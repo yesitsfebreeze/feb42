@@ -15,7 +15,7 @@ jobs:
       preparation_command: |
         make link
 
-    publish:
+  publish:
     name: 'Publish'
     uses: qmk/.github/.github/workflows/qmk_userspace_publish.yml@main
     if: always() && !cancelled()
