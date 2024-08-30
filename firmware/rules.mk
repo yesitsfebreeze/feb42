@@ -8,8 +8,7 @@ NKRO_ENABLE           = yes
 SEND_STRING_ENABLE    = yes
 
 # combos
-COMBO_ENABLE          = yes
-SRC += src/features/combos/combos.c
+# COMBO_ENABLE          = yes
 
 # remap
 REMAP_ENABLE          = yes
@@ -22,5 +21,5 @@ VPATH += src
 # RGB_MATRIX_DRIVER     = ws2812
 
 # SRC += src/rgb.c
-# SRC += src/main.c
+SRC += src/main.c
 

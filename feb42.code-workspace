@@ -28,7 +28,10 @@
       "macros.h": "c",
       "defines.h": "c",
       "*.def": "c",
-      "defintion.h": "c"
+      "defintion.h": "c",
+      "def.h": "c",
+      "main.h": "c",
+      "remap.h": "c"
     },
   }
 }

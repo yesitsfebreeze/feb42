@@ -3,6 +3,14 @@
 #include "src/defines.h"
 
 #include "src/features/rgb/rgb.h"
+// #include "src/features/combos/combos.h"
+
+#ifdef REMAP_ENABLE
+#  include "src/features/remap/remap.h"
+#endif
+
+// #include "src/features/combos/def.h"
+// #include "src/features/combos/def.h"
 // #include "features/macros/macros.h"
 
 #include "src/main.h"
