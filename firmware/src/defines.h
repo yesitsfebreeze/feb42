@@ -83,6 +83,7 @@ enum OS_TYPES { OS_WIN, OS_MAC, OS_LST };
 #define CK_INTERN_4 QK_USER_29
 #define CK_INTERN_5 QK_USER_30
 
+#define MOD_MASK_NONE 0
 #define MOD_MASK_CTRL_L (MOD_BIT(KC_LCTL))
 #define MOD_MASK_CTRL_R (MOD_BIT(KC_RCTL))
 #define MOD_MASK_ALT_L (MOD_BIT(KC_LALT))
@@ -92,64 +93,64 @@ enum OS_TYPES { OS_WIN, OS_MAC, OS_LST };
 #define MOD_MASK_SHIFT_L (MOD_BIT(KC_LSFT))
 #define MOD_MASK_SHIFT_R (MOD_BIT(KC_RSFT))
 
-typedef struct {
-  bool NONE : 1;
-  bool CTRL : 1;
-  bool CTRL_L : 1;
-  bool CTRL_R : 1;
-  bool ALT : 1;
-  bool ALT_L : 1;
-  bool ALT_R : 1;
-  bool GUI : 1;
-  bool GUI_L : 1;
-  bool GUI_R : 1;
-  bool SHIFT : 1;
-  bool SHIFT_L : 1;
-  bool SHIFT_R : 1;
-} ModState;
+// typedef struct {
+//   bool NONE : 1;
+//   bool CTRL : 1;
+//   bool CTRL_L : 1;
+//   bool CTRL_R : 1;
+//   bool ALT : 1;
+//   bool ALT_L : 1;
+//   bool ALT_R : 1;
+//   bool GUI : 1;
+//   bool GUI_L : 1;
+//   bool GUI_R : 1;
+//   bool SHIFT : 1;
+//   bool SHIFT_L : 1;
+//   bool SHIFT_R : 1;
+// } ModState;
 
-typedef struct {
-  bool     pressed;
-  uint16_t kc;
-} CustomKey;
+// typedef struct {
+//   bool     pressed;
+//   uint16_t kc;
+// } CustomKey;
 
-typedef struct {
-  bool enabled : 1;
-  bool ctl : 1;
-  bool alt : 1;
-  bool gui : 1;
-  bool any : 1;
-} TabbingState;
+// typedef struct {
+//   bool enabled : 1;
+//   bool ctl : 1;
+//   bool alt : 1;
+//   bool gui : 1;
+//   bool any : 1;
+// } TabbingState;
 
-typedef struct {
-  uint8_t  state;
-  uint16_t time;
-  uint16_t timer;
-  uint16_t last_timer;
-  bool     enabled : 1;
-  bool     running : 1;
-  bool     exec : 1;
-  bool     caps : 1;
-} StatsState;
+// typedef struct {
+//   uint8_t  state;
+//   uint16_t time;
+//   uint16_t timer;
+//   uint16_t last_timer;
+//   bool     enabled : 1;
+//   bool     running : 1;
+//   bool     exec : 1;
+//   bool     caps : 1;
+// } StatsState;
 
-typedef struct {
-  bool     active : 1;
-  int      taps;
-  uint16_t timer;
-} HypeState;
+// typedef struct {
+//   bool     active : 1;
+//   int      taps;
+//   uint16_t timer;
+// } HypeState;
 
-typedef union {
-  struct {
-    uint8_t      layer;
-    bool         pressed : 1;
-    ModState     mods;
-    TabbingState tabbing;
-    StatsState   stats;
-    uint16_t     snap_tap[2];
-    HypeState    hype;
-    CustomKey    keys[MATRIX_ROWS][MATRIX_COLS];
-  };
-} State;
+// typedef union {
+//   struct {
+//     uint8_t      layer;
+//     bool         pressed : 1;
+//     ModState     mods;
+//     TabbingState tabbing;
+//     StatsState   stats;
+//     uint16_t     snap_tap[2];
+//     HypeState    hype;
+//     CustomKey    keys[MATRIX_ROWS][MATRIX_COLS];
+//   };
+// } State;
 
-extern State  state;
-extern int8_t OS;
+// extern State  state;
+// extern int8_t OS;
