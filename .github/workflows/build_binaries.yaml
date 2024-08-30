@@ -13,7 +13,7 @@ jobs:
       qmk_repo: qmk/qmk_firmware
       qmk_ref: develop
       preparation_command: |
-        make links
+        make link
 
   publish:
     name: 'QMK Userspace Publish'

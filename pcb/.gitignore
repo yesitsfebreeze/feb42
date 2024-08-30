@@ -19,5 +19,5 @@ fp-info-cache
 *.ses
 *.xml
 *.csv
-
+.~lock.*
 *__pycache__/
