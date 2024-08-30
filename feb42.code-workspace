@@ -1,7 +1,27 @@
 {
   "folders": [
     {
+      "name": "pcb",
+      "path": "./pcb"
+    },
+    {
+      "name": "firmware",
+      "path": "./firmware"
+    },
+    {
+      "name": "root",
       "path": "."
     }
-  ]
+  ],
+  "settings": {
+    "explorer.excludeGitIgnore": true,
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.autopep8",
+      "editor.formatOnSave": true
+    },
+    "autopep8.args": [
+      "--global-config",
+      "${workspaceFolder}/pcb/scripting/autopep.ini",
+    ],
+  }
 }

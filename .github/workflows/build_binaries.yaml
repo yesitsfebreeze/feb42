@@ -7,7 +7,7 @@ permissions:
 
 jobs:
   build:
-    name: 'QMK Userspace Build'
+    name: 'QMK Build'
     uses: qmk/.github/.github/workflows/qmk_userspace_build.yml@main
     with:
       qmk_repo: qmk/qmk_firmware
@@ -16,7 +16,13 @@ jobs:
         make link
 
   publish:
-    name: 'QMK Userspace Publish'
+    name: 'QMK Publish'
     uses: qmk/.github/.github/workflows/qmk_userspace_publish.yml@main
     if: always() && !cancelled()
-    needs: build
+    steps:
+      - name: Upload compiled firmware (tagged release)
+          uses: softprops/action-gh-release@v1
+          if: startsWith(github.ref, 'refs/tags/')
+          with:
+            files: |
+              qmk_firmware/firmware.bin

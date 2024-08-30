@@ -1,9 +1,6 @@
 .PHONY: all help link build flash copy_firmware
 MAKEFLAGS += --no-print-directory
 
-default_keyboard=feb42
-default_keymap=default
-
 DIR := $(patsubst %/,%,$(dir $(shell realpath "$(lastword $(MAKEFILE_LIST))")))
 ifeq ($(DIR),)
     DIR := $(shell pwd)
@@ -16,52 +13,31 @@ help:
 
 all: help
 
+link: ## links the keyboard into the qmk firmware folder
+	@if [ -e "$(QMK)/keyboards/feb42" ]; then rm -rf $(QMK)/keyboards/feb42; fi
+	@ln -s $(DIR)/firmware $(QMK)/keyboards/feb42
 
-link: ## [kb=my_keyboard]
-	@$(eval kb ?= $(if $(kb),$(kb), $(default_keyboard)))
-	@if [ ! -d "$(DIR)/keyboards/$(kb)" ]; then \
-		echo "Error: Keyboard '$(kb)' does not exist."; \
-		exit 1; \
-	fi
-	@if [ -e "$(QMK)/keyboards/$(kb)" ]; then rm -rf $(QMK)/keyboards/$(kb); fi
-	@ln -s $(DIR)/keyboards/$(kb) $(QMK)/keyboards/$(kb)
+build: ## [km=my_keymap]
+	@$(eval km ?= $(if $(km),$(km), "default"))
+	@make link -B
+	@qmk compile -kb feb42 -km $(km)
+	@make copy_firmware -B kb=feb42 km=$(km)
 
-build: ## ## [kb=my_keyboard] [km=my_keymap]
-	@$(eval kb ?= $(if $(kb),$(kb), $(default_keyboard)))
-	@if [ ! -d "$(DIR)/keyboards/$(kb)" ]; then \
-		echo "Error: Keyboard '$(kb)' does not exist."; \
-		exit 1; \
-	fi
-	@$(eval km ?= $(if $(km),$(km), $(default_keymap)))
-	@make link -B kb=$(kb)
-	@qmk compile -kb $(kb) -km $(km)
-	@make copy_firmware -B kb=$(kb) km=$(km)
-
-flash: ## [kb=my_keyboard] [km=my_keymap] [console=true|false]
-	@$(eval kb ?= $(if $(kb),$(kb), $(default_keyboard)))
-	@if [ ! -d "$(DIR)/keyboards/$(kb)" ]; then \
-		echo "Error: Keyboard '$(kb)' does not exist."; \
-		exit 1; \
-	fi
-	@$(eval km ?= $(if $(km),$(km), $(default_keymap)))
-	@make build -B kb=$(kb) km=$(km)
-	@qmk flash -kb $(kb) -km $(km)
+flash: ## [km=my_keymap] [console=true|false]
+	@$(eval km ?= $(if $(km),$(km), "default"))
+	@make build -B km=$(km)
+	@qmk flash -kb feb42 -km $(km)
 ifeq ($(console),true)
 	@qmk console
 endif
 
 
-copy_firmware: ## [kb=my_keyboard] [km=my_keymap]
-	@$(eval kb ?= $(if $(kb),$(kb), $(default_keyboard)))
-	@if [ ! -d "$(DIR)/keyboards/$(kb)" ]; then \
-		echo "Error: Keyboard '$(kb)' does not exist."; \
-		exit 1; \
-	fi
+copy_firmware: ## [km=my_keymap]
 	@$(eval km ?= $(if $(km),$(km), $(default_keymap)))
 	@echo Copying firmware..
 	@if [ ! -d "$(DIR)/build" ]; then mkdir -p $(DIR)/build; fi
-	@if [ -e "$(QMK)/.build/${kb}_$(km).bin" ]; then cp "$(QMK)/.build/${kb}_$(km).bin" "$(DIR)/build/${kb}_$(km).bin"; fi
-	@if [ -e "$(QMK)/.build/${kb}_$(km).hex" ]; then cp "$(QMK)/.build/${kb}_$(km).hex" "$(DIR)/build/${kb}_$(km).hex"; fi
-	@if [ -e "$(QMK)/.build/${kb}_$(km).elf" ]; then cp "$(QMK)/.build/${kb}_$(km).elf" "$(DIR)/build/${kb}_$(km).elf"; fi
-	@if [ -e "$(DIR)/${kb}_$(km).hex" ]; then rm -f $(DIR)/${kb}_$(km).hex; fi
+	@if [ -e "$(QMK)/.build/feb42_$(km).bin" ]; then cp "$(QMK)/.build/feb42_$(km).bin" "$(DIR)/build/firmware.bin"; fi
+	@if [ -e "$(QMK)/.build/feb42_$(km).hex" ]; then cp "$(QMK)/.build/feb42_$(km).hex" "$(DIR)/build/firmware.hex"; fi
+	@if [ -e "$(QMK)/.build/feb42_$(km).elf" ]; then cp "$(QMK)/.build/feb42_$(km).elf" "$(DIR)/build/firmware.elf"; fi
+	@if [ -e "$(DIR)/feb42_$(km).hex" ]; then rm -f $(DIR)/feb42_$(km).hex; fi
 	@echo done
