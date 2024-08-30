@@ -1,4 +1,4 @@
-.PHONY: all help link build flash copy_firmware
+.PHONY: all help link build flash copy_firmware push
 MAKEFLAGS += --no-print-directory
 
 DIR := $(patsubst %/,%,$(dir $(shell realpath "$(lastword $(MAKEFILE_LIST))")))
@@ -30,6 +30,12 @@ flash: ## [km=my_keymap] [console=true|false]
 ifeq ($(console),true)
 	@qmk console
 endif
+
+push: ## [m="my message"]
+	$(eval m ?= $(if $(m),$(m),"update"))
+	@git add --all
+	@git commit -m "$(m)"
+	@git push
 
 
 copy_firmware: ## [km=my_keymap]
