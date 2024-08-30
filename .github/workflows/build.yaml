@@ -16,10 +16,13 @@ jobs:
       preparation_command: |
         make link
 
-  publish:
-    name: 'QMK Publish'
-    uses: softprops/action-gh-release@v1
-    if: always() && !cancelled()
-    with:
-          files: |
-            qmk_firmware/firmware.bin
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: Release.txt
