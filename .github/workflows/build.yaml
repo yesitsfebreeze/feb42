@@ -1,32 +1,25 @@
-name: Build Firmware
+name: Build QMK firmware
 
-on: [push]
+on: [push, workflow_dispatch]
+
+permissions:
+  contents: write
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Clone SonixQMK
-        run: git clone https://github.com/SonixQMK/qmk_firmware.git
-      - name: Install qmk deps
-        run: cd qmk_firmware && ./util/qmk_install.sh && python3 -m pip install qmk
-      - name: fix gcc
-        run: sudo bash .github/scripts/update-gcc10-ubuntu.sh
-      - name: Install git submodules
-        run: cd qmk_firmware && make git-submodule
-      - name: Copy
-        run: make link
-      - name: Compile firmware
-        run: cd qmk_firmware && make keychron/k6/rgb/ansi:ansi-josh
-      - name: Upload compiled firmware (build artifact)
-        uses: actions/upload-artifact@v2
-        with:
-          name: Keychron K6 QMK Firmware
-          path: qmk_firmware/keychron_k6_rgb_ansi_ansi-josh.bin
-      - name: Upload compiled firmware (tagged release)
-        uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
-        with:
+    name: 'QMK Build'
+    uses: qmk/.github/.github/workflows/qmk_userspace_build.yml@main
+    with:
+      qmk_repo: qmk/qmk_firmware
+      qmk_ref: master
+      # qmk_ref: develop
+      preparation_command: |
+        make link
+
+  publish:
+    name: 'QMK Publish'
+    uses: softprops/action-gh-release@v1
+    if: always() && !cancelled()
+    with:
           files: |
-            qmk_firmware/keychron_k6_rgb_ansi_ansi-josh.bin
+            qmk_firmware/firmware.bin
