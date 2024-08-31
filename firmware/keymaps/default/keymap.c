@@ -1,5 +1,6 @@
 #include QMK_KEYBOARD_H
 #include "keymap.h"
+#include "custom.h"
 
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -41,5 +42,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 void init_feb42(void) {}
 
 bool exec_feb42(uint16_t *keycode, keyrecord_t *record) {
-  return false;
+  bool cancel = false;
+
+  if (!cancel) exec_tabbing(*keycode, record);
+
+  return !cancel;
 }

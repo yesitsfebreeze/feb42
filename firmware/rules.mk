@@ -16,6 +16,9 @@ SRC += src/buffer.c
 SRC += src/remap.c
 SRC += src/rgb.c
 
+# custom funtions
+SRC += keymaps/default/custom.c
+
 RGB_MATRIX_ENABLE     = yes
 RGB_MATRIX_CUSTOM_KB  = yes
 RGB_MATRIX_DRIVER     = ws2812
