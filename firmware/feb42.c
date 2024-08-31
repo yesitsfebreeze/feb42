@@ -9,6 +9,10 @@
 #  include "print.h"
 #endif
 
+#ifdef COMBO_ENABLE
+#  include "combo.def.h"
+#endif
+
 #ifdef REMAP_ENABLE
 #  include "src/remap.h"
 #endif
