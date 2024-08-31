@@ -5,6 +5,10 @@ I made this because i use the ID42 as a daily driver and wanted to also use
 it for gaming.  
 So natrually i wanted HE Switches :)  
 
+
+![front](./pcb/renders/front.png)
+![front](./pcb/renders/back.png)
+
 ## Compiling
 
 ### Github actions
