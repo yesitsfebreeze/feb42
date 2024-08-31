@@ -9,8 +9,6 @@ enum LAYERS {
   GAME,
 };
 
-enum OS_TYPES { OS_WIN, OS_MAC, OS_LST };
-
 #define LT_L LT(1, KC_SPC)
 #define LT_R LT(2, KC_SPC)
 #define LT_C LT(3, KC_SPC)
@@ -84,14 +82,16 @@ enum OS_TYPES { OS_WIN, OS_MAC, OS_LST };
 #define CK_INTERN_5 QK_USER_30
 
 #define MOD_MASK_NONE 0
-#define MOD_MASK_CTRL_L (MOD_BIT(KC_LCTL))
-#define MOD_MASK_CTRL_R (MOD_BIT(KC_RCTL))
-#define MOD_MASK_ALT_L (MOD_BIT(KC_LALT))
-#define MOD_MASK_ALT_R (MOD_BIT(KC_RALT))
-#define MOD_MASK_GUI_L (MOD_BIT(KC_LGUI))
-#define MOD_MASK_GUI_R (MOD_BIT(KC_RGUI))
-#define MOD_MASK_SHIFT_L (MOD_BIT(KC_LSFT))
-#define MOD_MASK_SHIFT_R (MOD_BIT(KC_RSFT))
+// #define MOD_MASK_SHIFT_GUI MOD_MASK_SG
+// #define MOD_MASK_GUI_SHIFT MOD_MASK_SG
+// #define MOD_MASK_CTRL_L (MOD_BIT(KC_LCTL))
+// #define MOD_MASK_CTRL_R (MOD_BIT(KC_RCTL))
+// #define MOD_MASK_ALT_L (MOD_BIT(KC_LALT))
+// #define MOD_MASK_ALT_R (MOD_BIT(KC_RALT))
+// #define MOD_MASK_GUI_L (MOD_BIT(KC_LGUI))
+// #define MOD_MASK_GUI_R (MOD_BIT(KC_RGUI))
+// #define MOD_MASK_SHIFT_L (MOD_BIT(KC_LSFT))
+// #define MOD_MASK_SHIFT_R (MOD_BIT(KC_RSFT))
 
 // typedef struct {
 //   bool NONE : 1;

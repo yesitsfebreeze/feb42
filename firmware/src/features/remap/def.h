@@ -5,11 +5,10 @@
 #  include "keymap.h"
 #  include "src/features/remap/remap.h"
 
-// OS
 // writes defintions from keymap/features/remap.def
 // REMAP(KEY, MODIFIER, REMAPPED_KEYCODE)
 
-#  define REMAP(KEYCODE, MODIFIER, REMAPPED_KEYCODE) {KEYCODE, MOD_MASK_##MODIFIER, REMAPPED_KEYCODE},
+#  define REMAP(OS, KEYCODE, MODIFIER, REMAPPED_KEYCODE) {OST_##OS, KEYCODE, MOD_MASK_##MODIFIER, REMAPPED_KEYCODE},
 
 remap_t remaps[] = {
 #  include "features/remap.def"

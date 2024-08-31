@@ -23,7 +23,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______,  _______,  _______,            LT_C,               _______,                      _______,  _______,  _______
   ),
   [COMBO] = LAYOUT(
-    CK_OS,    KC_MB1,   KC_MS_U,  KC_MB2,   KC_F1,    KC_F2,    KC_F3,    _______,  _______,  _______,  _______,  QK_BOOT,
+    OS,       KC_MB1,   KC_MS_U,  KC_MB2,   KC_F1,    KC_F2,    KC_F3,    _______,  _______,  _______,  _______,  QK_BOOT,
     _______,  KC_MS_L,  KC_MS_D,  KC_MS_R,  KC_F4,    KC_F5,    KC_F6,    _______,  _______,  _______,            CK_SENT,
     _______,  KC_WH_U,  KC_MB3,   KC_WH_D,  KC_F7,    KC_F8,    KC_F9,    KC_F10,   TO(GAME),           KC_F12,   _______,
     _______,  _______,  _______,            _______,            _______,                      _______,  _______,  RGB_TOG
@@ -36,3 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 };
 // clang-format on
+
+bool process_feb42(uint16_t *keycode, keyrecord_t *record) {
+  return false;
+}

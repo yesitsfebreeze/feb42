@@ -19,8 +19,11 @@ void _press(uint8_t slot, uint16_t original, uint8_t custom) {
   buffer[slot].original = original;
   buffer[slot].custom   = custom;
 
+  const uint8_t mods = get_mods() | get_oneshot_mods() | get_weak_mods();
+  del_mods(MOD_MASK_CSAG);
   unregister_code16(original);
   register_code16(custom);
+  add_mods(mods);
 }
 
 int8_t _find_free(void) {

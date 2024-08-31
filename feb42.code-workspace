@@ -31,7 +31,8 @@
       "defintion.h": "c",
       "def.h": "c",
       "main.h": "c",
-      "remap.h": "c"
+      "remap.h": "c",
+      "os.h": "c"
     },
   }
 }

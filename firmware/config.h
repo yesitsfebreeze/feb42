@@ -1,7 +1,16 @@
 #pragma once
 
 // features
-#define REMAP_ENABLE yes
+#define REMAP_ENABLE
+#define REMAP_OS_WIN_ENABLE
+#define REMAP_OS_MAC_ENABLE
+// #define REMAP_OS_LIN_ENABLE
+
+// Special Keys
+#define OS QK_USER_28
+#define OS_WIN QK_USER_29
+#define OS_MAC QK_USER_30
+#define OS_LIN QK_USER_31
 
 // qmk config
 #define FORCE_NKRO

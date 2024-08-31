@@ -16,7 +16,7 @@ The action will provide the built artifact.
 2. Install QMK for ur OS (`https://docs.qmk.fm/newbs_getting_started`)  
 3. Open QMK MSYS
 4. cd into the downloaded repository 
-5. run `make build` (optionally pass km=my_custom_keymap if you are not using the default one)
+5. run `make compile` (optionally pass km=my_custom_keymap if you are not using the default one)
 
 The Makefile will automatically link the keyboard into your qmk_firmware folder,  
 no need to copy things over.

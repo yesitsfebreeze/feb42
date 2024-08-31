@@ -11,8 +11,6 @@ SEND_STRING_ENABLE    = yes
 # COMBO_ENABLE          = yes
 
 SRC += src/buffer.c
-
-# remap
 SRC += src/features/remap/remap.c
 
 # VPATH += src

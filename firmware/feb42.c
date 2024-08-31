@@ -10,6 +10,10 @@
 #  include "print.h"
 #endif
 
+#ifdef OS_ENABLE
+#  include "src/features/os/os.h"
+#endif
+
 #ifdef REMAP_ENABLE
 #  include "src/features/remap/remap.h"
 #endif
@@ -22,6 +26,10 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   uint16_t current = keycode;
 
 #include "src/features/remap/feature.inc"
+
+  if (process_feb42(&current, record)) {
+    return false;
+  }
 
   if (process_buffer(keycode, current, record)) {
     return false;
