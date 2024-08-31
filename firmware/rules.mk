@@ -10,8 +10,9 @@ SEND_STRING_ENABLE    = yes
 # combos
 # COMBO_ENABLE          = yes
 
+SRC += src/mods.c
 SRC += src/buffer.c
-SRC += src/features/remap/remap.c
+SRC += src/remap.c
 
 # VPATH += src
 

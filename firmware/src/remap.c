@@ -1,8 +1,9 @@
 #ifdef REMAP_ENABLE
 #  include "remap.h"
 
-#  include "./def.h"
-
+#  include "remap.def.h"
+#  include "mods.h"
+#  include "buffer.h"
 enum OS_TYPE CURRENT_OS = OST_WIN;
 
 bool process_os(uint16_t kc, keyrecord_t *rec) {
@@ -31,20 +32,26 @@ bool process_os(uint16_t kc, keyrecord_t *rec) {
   }
 }
 
-bool is_valid_remap(remap_t *remap, uint16_t *keycode, uint8_t mods) {
-  if (remap->os != CURRENT_OS && remap->os != OST_NONE) return false;
-  if ((remap->mods & mods) != 0) return false;
-  if (remap->keycode != *keycode) return false;
+bool is_valid_remap(remap_t *remap, uint16_t *keycode) {
+  bool correct_os   = remap->os == CURRENT_OS || remap->os == OST_NONE;
+  bool no_mods      = remap->mod_mask == MOD_MASK_NONE;
+  bool correct_mods = (CURRENT_MODS & ~remap->mod_mask) != CURRENT_MODS;
+  bool correct_key  = remap->original == *keycode;
+
+  if (!correct_key) return false;
+  if (!correct_os) return false;
+  if (!correct_mods && !no_mods) return false;
+
   return true;
 }
 
-uint16_t get_remap_key(uint16_t *keycode, uint8_t mods) {
+uint16_t get_remap_key(uint16_t *keycode) {
   uint16_t idx = 0;
   for (idx = 0; idx < REMAP_COUNT; ++idx) {
     remap_t *remap = &remaps[idx];
-    if (!is_valid_remap(remap, keycode, mods)) continue;
+    if (!is_valid_remap(remap, keycode)) continue;
 
-    return remap->new_keycode;
+    return remap->remapped;
   }
   return KC_NO;
 }
@@ -52,9 +59,8 @@ uint16_t get_remap_key(uint16_t *keycode, uint8_t mods) {
 bool process_remap(uint16_t *keycode, keyrecord_t *record) {
   if (!record->event.pressed) return true;
   if (process_os(*keycode, record)) return true;
-  const uint8_t mods = get_mods() | get_oneshot_mods() | get_weak_mods();
 
-  uint16_t new_keycode = get_remap_key(keycode, mods);
+  uint16_t new_keycode = get_remap_key(keycode);
   if (new_keycode == KC_NO) return true;
 
   *keycode = new_keycode;

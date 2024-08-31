@@ -16,17 +16,19 @@ enum OS_TYPE {
   OST_LAST
 };
 
+extern enum OS_TYPE CURRENT_OS;
+
 typedef struct remap_t {
   enum OS_TYPE os;
-  uint16_t     keycode;
-  uint8_t      mods;
-  uint16_t     new_keycode;
+  uint16_t     original;
+  uint8_t      mod_mask;
+  uint16_t     remapped;
 } remap_t;
-
-bool process_remap(uint16_t *keycode, keyrecord_t *record);
 
 extern remap_t remaps[];
 
 const extern uint8_t PROGMEM REMAP_COUNT;
+
+bool process_remap(uint16_t *keycode, keyrecord_t *record);
 
 #endif

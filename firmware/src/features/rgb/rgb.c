@@ -1,5 +1,4 @@
 #include "./rgb.h"
-#include "../defines.h"
 
 #ifdef RGB_MATRIX_ENABLE
 

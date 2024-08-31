@@ -1,6 +1,5 @@
 #include QMK_KEYBOARD_H
 #include "keymap.h"
-#include "src/defines.h"
 
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -37,6 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 // clang-format on
 
+// you can do custom stuff here
 bool process_feb42(uint16_t *keycode, keyrecord_t *record) {
   return false;
 }

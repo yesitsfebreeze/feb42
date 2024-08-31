@@ -1,4 +1,0 @@
-(MA_OR, "||")
-(MA_AND, "&&")
-(MA_PTR, "->")
-(MA_COLCOL, "::")

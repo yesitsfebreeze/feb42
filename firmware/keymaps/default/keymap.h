@@ -1,10 +1,18 @@
 #pragma once
 
+enum LAYERS {
+  BASE,
+  LOWER,
+  RAISE,
+  COMBO,
+  GAME,
+};
+
 #define KC_MB1 KC_MS_BTN1
 #define KC_MB2 KC_MS_BTN2
 #define KC_MB3 KC_MS_BTN3 // MWHEEL_CLICK
 
-// CUSTOM KEY RANGE -> CK_00 - CK_56
+// CUSTOM KEY RANGE -> CK_00 - CK_57
 #define CK_SENT CK_00
 #define CK_STATS CK_01
 #define CK_CTLZ CK_02

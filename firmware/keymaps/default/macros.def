@@ -1,0 +1,7 @@
+// clang-format off
+
+//    Key,       String
+MACRO(MA_OR,      "||")
+MACRO(MA_AND,     "&&")
+MACRO(MA_PTR,     "->")
+MACRO(MA_COLCOL,  "::")

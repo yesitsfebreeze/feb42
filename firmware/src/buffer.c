@@ -1,5 +1,6 @@
 #include "buffer.h"
 
+#include "mods.h"
 #define BUFFER_SIZE 16
 
 typedef struct key_t {
@@ -19,11 +20,13 @@ void _press(uint8_t slot, uint16_t original, uint8_t custom) {
   buffer[slot].original = original;
   buffer[slot].custom   = custom;
 
-  const uint8_t mods = get_mods() | get_oneshot_mods() | get_weak_mods();
-  del_mods(MOD_MASK_CSAG);
+  // const uint8_t mods = get_mods() | get_oneshot_mods() | get_weak_mods();
   unregister_code16(original);
+  del_mods(MOD_MASK_CSAG);
+  add_mods(CURRENT_MODS);
   register_code16(custom);
-  add_mods(mods);
+  // del_mods(MOD_MASK_CSAG);
+  // add_mods(mods);
 }
 
 int8_t _find_free(void) {
@@ -46,7 +49,7 @@ int8_t _find(uint16_t keycode) {
   return -1; // Not found
 }
 
-bool process_buffer(uint16_t original, uint16_t custom, keyrecord_t *record) {
+bool _process_buffer(uint16_t original, uint16_t custom, keyrecord_t *record) {
   if (record->event.pressed) {
     if (original == custom) return false;
     if (custom == KC_NO) return false;
@@ -64,4 +67,11 @@ bool process_buffer(uint16_t original, uint16_t custom, keyrecord_t *record) {
   }
 
   return false;
+}
+
+bool process_buffer(uint16_t original, uint16_t custom, keyrecord_t *record) {
+  bool cancel = _process_buffer(original, custom, record);
+
+  // PREV_MODS = get_mods() | get_oneshot_mods() | get_weak_mods();
+  return cancel;
 }
