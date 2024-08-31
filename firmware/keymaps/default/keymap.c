@@ -41,10 +41,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 void init_feb42(void) {}
 
+void scan_feb42(void) {
+  scan_stats();
+  scan_hype();
+}
+
 bool exec_feb42(uint16_t *keycode, keyrecord_t *record) {
   bool cancel = false;
 
   if (!cancel) exec_tabbing(*keycode, record);
+  if (!cancel) cancel = exec_stats(*keycode, record);
+  if (!cancel) cancel = exec_snaptap(*keycode, record);
+  if (!cancel) cancel = exec_hype(*keycode, record);
 
   return !cancel;
 }
