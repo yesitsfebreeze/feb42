@@ -86,9 +86,9 @@
 // dont use/touch these
 #define CK_RGB QK_USER_26
 #define CK_RGBI QK_USER_27
-#define OS_WIN QK_USER_28
-#define OS_MAC QK_USER_29
-#define OS_LIN QK_USER_30
+#define WIN QK_USER_28
+#define MAC QK_USER_29
+#define LIN QK_USER_30
 #define OS QK_USER_31
 
 // qmk config

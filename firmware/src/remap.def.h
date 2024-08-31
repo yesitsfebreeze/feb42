@@ -7,7 +7,7 @@
 // writes defintions from keymap/remap.def
 // REMAP(KEY, MODIFIER, REMAPPED_KEYCODE)
 
-#  define REMAP(OS, ORIGINAL, MODMASK, REMAPPED) {OST_##OS, ORIGINAL, MOD_MASK_##MODMASK, REMAPPED},
+#  define REMAP(OS, ORIGINAL, MODMASK, REMAPPED) {OS_##OS, ORIGINAL, MOD_MASK_##MODMASK, REMAPPED},
 
 remap_t remaps[] = {
 #  include "remap.def"

@@ -1,6 +1,7 @@
-#include "./rgb.h"
-
 #ifdef RGB_MATRIX_ENABLE
+#  include "rgb.h"
+#  include "keymap.h"
+#  include "os.h"
 
 bool RGB_INDICATOR = true;
 bool RGB_MODE      = false;
@@ -106,7 +107,7 @@ bool rgb_matrix_indicators_user(void) {
     if (RGB_MODE) {
       rgb_matrix_set_color(RGB_LAYER_INDICATOR_KEY, 0, 0, 0);
     } else {
-      if (OS == OS_MAC) {
+      if (CURRENT_OS == OS_MAC) {
         rgb_matrix_set_color(RGB_LAYER_INDICATOR_KEY - 1, INDICATOR_R, INDICATOR_G, INDICATOR_B);
         rgb_matrix_set_color(RGB_LAYER_INDICATOR_KEY + 1, INDICATOR_R, INDICATOR_G, INDICATOR_B);
       } else {
@@ -153,7 +154,7 @@ void init_rgb() {
   layer_move(BASE);
 }
 
-bool handle_rgb(uint16_t kc, keyrecord_t *rec) {
+bool exec_rgb(uint16_t kc, keyrecord_t *rec) {
   if (!rec->event.pressed) return false;
   if (kc == CK_RGB) {
     RGB_MODE = !RGB_MODE;

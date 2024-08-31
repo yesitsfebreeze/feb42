@@ -1,10 +1,7 @@
 #pragma once
-#include QMK_KEYBOARD_H
-
-#define CK_RGB CK_INTERN_1
-#define CK_RGBI CK_INTERN_2
 
 #ifdef RGB_MATRIX_ENABLE
+#  include QMK_KEYBOARD_H
 
 #  define RGB_BASE 136, 0, 255
 #  define RGB_LOWER 3, 255, 74
@@ -26,6 +23,6 @@ extern uint8_t INDICATOR_G;
 extern uint8_t INDICATOR_B;
 
 void init_rgb(void);
-bool handle_rgb(uint16_t kc, keyrecord_t *rec);
+bool exec_rgb(uint16_t kc, keyrecord_t *rec);
 
 #endif

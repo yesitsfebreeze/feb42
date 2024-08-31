@@ -37,6 +37,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // clang-format on
 
 // you can do custom stuff here
-bool process_feb42(uint16_t *keycode, keyrecord_t *record) {
+
+void init_feb42(void) {}
+
+bool exec_feb42(uint16_t *keycode, keyrecord_t *record) {
   return false;
 }

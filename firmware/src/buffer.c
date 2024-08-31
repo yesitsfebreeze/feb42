@@ -49,7 +49,7 @@ int8_t _find(uint16_t keycode) {
   return -1; // Not found
 }
 
-bool _process_buffer(uint16_t original, uint16_t custom, keyrecord_t *record) {
+bool process_buffer(uint16_t original, uint16_t custom, keyrecord_t *record) {
   if (record->event.pressed) {
     if (original == custom) return false;
     if (custom == KC_NO) return false;
@@ -69,8 +69,8 @@ bool _process_buffer(uint16_t original, uint16_t custom, keyrecord_t *record) {
   return false;
 }
 
-bool process_buffer(uint16_t original, uint16_t custom, keyrecord_t *record) {
-  bool cancel = _process_buffer(original, custom, record);
+bool exec_buffer(uint16_t original, uint16_t custom, keyrecord_t *record) {
+  bool cancel = process_buffer(original, custom, record);
 
   // PREV_MODS = get_mods() | get_oneshot_mods() | get_weak_mods();
   return cancel;

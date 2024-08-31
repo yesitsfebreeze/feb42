@@ -33,7 +33,8 @@
       "main.h": "c",
       "remap.h": "c",
       "os.h": "c",
-      "buffer.h": "c"
+      "buffer.h": "c",
+      "locale": "c"
     },
   }
 }
