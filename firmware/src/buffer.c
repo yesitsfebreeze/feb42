@@ -10,23 +10,21 @@ typedef struct key_t {
 
 key_t buffer[BUFFER_SIZE] = {0};
 
-void _release(uint8_t index) {
-  unregister_code16(buffer[index].custom);
-  buffer[index].original = KC_NO;
-  buffer[index].custom   = KC_NO;
-}
+void _press(uint8_t slot, uint16_t original, uint16_t custom) {
+  custom_mod_mask(original, false);
+  custom_mod_mask(custom, true);
+  unregister_code16(original);
+  register_code16(custom);
 
-void _press(uint8_t slot, uint16_t original, uint8_t custom) {
   buffer[slot].original = original;
   buffer[slot].custom   = custom;
+}
 
-  // const uint8_t mods = get_mods() | get_oneshot_mods() | get_weak_mods();
-  unregister_code16(original);
-  del_mods(MOD_MASK_CSAG);
-  add_mods(CURRENT_MODS);
-  register_code16(custom);
-  // del_mods(MOD_MASK_CSAG);
-  // add_mods(mods);
+void _release(uint8_t index) {
+  unregister_code16(buffer[index].custom);
+  custom_mod_mask(buffer[index].custom, false);
+  buffer[index].original = KC_NO;
+  buffer[index].custom   = KC_NO;
 }
 
 int8_t _find_free(void) {
@@ -49,7 +47,7 @@ int8_t _find(uint16_t keycode) {
   return -1; // Not found
 }
 
-bool process_buffer(uint16_t original, uint16_t custom, keyrecord_t *record) {
+bool exec_buffer(uint16_t original, uint16_t custom, keyrecord_t *record) {
   if (record->event.pressed) {
     if (original == custom) return false;
     if (custom == KC_NO) return false;
@@ -67,11 +65,4 @@ bool process_buffer(uint16_t original, uint16_t custom, keyrecord_t *record) {
   }
 
   return false;
-}
-
-bool exec_buffer(uint16_t original, uint16_t custom, keyrecord_t *record) {
-  bool cancel = process_buffer(original, custom, record);
-
-  // PREV_MODS = get_mods() | get_oneshot_mods() | get_weak_mods();
-  return cancel;
 }

@@ -1,74 +1,41 @@
 #include "mods.h"
 
-uint8_t CURRENT_MODS = MOD_MASK_NONE;
-uint8_t PREV_MODS    = MOD_MASK_NONE;
+uint8_t STORED_MODS = MOD_MASK_NONE;
 
-void store_mods(uint16_t keycode, keyrecord_t *record) {
-  // bool pressed = record->event.pressed;
-  // switch (keycode) {
-  //   case KC_LCTL:
-  //     if (pressed) {
-  //       CURRENT_MODS |= MOD_MASK_CTRL_L; // Add left control
-  //     } else {
-  //       CURRENT_MODS &= ~MOD_MASK_CTRL_L; // Remove left control
-  //     }
-  //     break;
-  //   case KC_RCTL:
-  //     if (pressed) {
-  //       CURRENT_MODS |= MOD_MASK_CTRL_R; // Add right control
-  //     } else {
-  //       CURRENT_MODS &= ~MOD_MASK_CTRL_R; // Remove right control
-  //     }
-  //     break;
-  //   case KC_LGUI:
-  //     if (pressed) {
-  //       CURRENT_MODS |= MOD_MASK_GUI_L; // Add left gui
-  //     } else {
-  //       CURRENT_MODS &= ~MOD_MASK_GUI_L; // Remove left gui
-  //     }
-  //     break;
-  //   case KC_RGUI:
-  //     if (pressed) {
-  //       CURRENT_MODS |= MOD_MASK_GUI_R; // Add right gui
-  //     } else {
-  //       CURRENT_MODS &= ~MOD_MASK_GUI_R; // Remove right gui
-  //     }
-  //     break;
-  //   case KC_LALT:
-  //     if (pressed) {
-  //       CURRENT_MODS |= MOD_MASK_ALT_L; // Add left alt
-  //     } else {
-  //       CURRENT_MODS &= ~MOD_MASK_ALT_L; // Remove left alt
-  //     }
-  //     break;
-  //   case KC_RALT:
-  //     if (pressed) {
-  //       CURRENT_MODS |= MOD_MASK_ALT_R; // Add right alt
-  //     } else {
-  //       CURRENT_MODS &= ~MOD_MASK_ALT_R; // Remove right alt
-  //     }
-  //     break;
-  //   case KC_LSFT:
-  //     if (pressed) {
-  //       CURRENT_MODS |= MOD_MASK_SHIFT_L; // Add left shift
-  //     } else {
-  //       CURRENT_MODS &= ~MOD_MASK_SHIFT_L; // Remove left shift
-  //     }
-  //     break;
-  //   case KC_RSFT:
-  //     if (pressed) {
-  //       CURRENT_MODS |= MOD_MASK_SHIFT_R; // Add right shift
-  //     } else {
-  //       CURRENT_MODS &= ~MOD_MASK_SHIFT_R; // Remove right shift
-  //     }
-  //     break;
-  // }
+void store_mods(void) {
+  STORED_MODS = get_mods();
+  del_mods(MOD_MASK_ALL);
+}
 
-  // del_mods(MOD_MASK_CSAG);
-  // // add_mods(PREV_MODS);
+uint8_t get_stored_mods(void) {
+  return STORED_MODS;
 }
 
 void restore_mods(void) {
-  // del_mods(MOD_MASK_CSAG);
-  // add_mods(PREV_MODS);
+  del_mods(MOD_MASK_ALL);
+  add_mods(STORED_MODS);
+}
+
+void custom_mod_mask(uint16_t keycode, bool active) {
+  uint8_t mod_mask = MOD_MASK_NONE;
+
+  // clang-format off
+  switch (keycode) {
+    case KC_LCTL: mod_mask = MOD_MASK_CTRL_L; break;
+    case KC_RCTL: mod_mask = MOD_MASK_CTRL_R; break;
+    case KC_LGUI: mod_mask = MOD_MASK_GUI_L; break;
+    case KC_RGUI: mod_mask = MOD_MASK_GUI_R; break;
+    case KC_LALT: mod_mask = MOD_MASK_ALT_L; break;
+    case KC_RALT: mod_mask = MOD_MASK_ALT_R; break;
+    case KC_LSFT: mod_mask = MOD_MASK_SHIFT_L; break;
+    case KC_RSFT: mod_mask = MOD_MASK_SHIFT_R; break;
+    default: return;
+  }
+  // clang-format on
+
+  if (active) {
+    STORED_MODS |= mod_mask;
+  } else {
+    STORED_MODS &= ~mod_mask;
+  }
 }

@@ -3,6 +3,7 @@
 enum OS_TYPE CURRENT_OS = OS_WIN;
 
 bool exec_os(uint16_t kc, keyrecord_t *rec) {
+  if (!rec->event.pressed) return false;
   switch (kc) {
 #ifdef REMAP_OS_WIN_ENABLE
     case WIN:

@@ -1,5 +1,5 @@
 # https://github.com/qmk/qmk_firmware/blob/master/docs/faq_debug.md
-CONSOLE_ENABLE        = yes
+# CONSOLE_ENABLE        = yes
 
 BOOTMAGIC_ENABLE      = yes
 MOUSEKEY_ENABLE       = yes

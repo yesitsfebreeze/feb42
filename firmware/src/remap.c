@@ -7,14 +7,15 @@
 #  include "buffer.h"
 
 bool is_valid_remap(remap_t *remap, uint16_t *keycode) {
-  bool correct_os   = remap->os == CURRENT_OS || remap->os == OS_NONE;
-  bool no_mods      = remap->mod_mask == MOD_MASK_NONE;
-  bool correct_mods = (CURRENT_MODS & ~remap->mod_mask) != CURRENT_MODS;
-  bool correct_key  = remap->original == *keycode;
+  uint8_t mods         = get_stored_mods();
+  bool    correct_os   = remap->os == CURRENT_OS || remap->os == OS_NONE;
+  bool    no_mods      = remap->mod_mask == MOD_MASK_NONE;
+  bool    correct_mods = ((mods & ~remap->mod_mask) != mods) || no_mods;
+  bool    correct_key  = remap->original == *keycode;
 
   if (!correct_key) return false;
   if (!correct_os) return false;
-  if (!correct_mods && !no_mods) return false;
+  if (!correct_mods) return false;
 
   return true;
 }
@@ -31,14 +32,14 @@ uint16_t get_remap_key(uint16_t *keycode) {
 }
 
 bool exec_remap(uint16_t *keycode, keyrecord_t *record) {
-  if (!record->event.pressed) return true;
+  if (!record->event.pressed) return false;
 
   uint16_t new_keycode = get_remap_key(keycode);
-  if (new_keycode == KC_NO) return true;
+  if (new_keycode == KC_NO) return false;
 
   *keycode = new_keycode;
 
-  return false;
+  return true;
 }
 
 #endif

@@ -8,6 +8,7 @@
 
 // Additional Mod Masks
 #define MOD_MASK_NONE 0
+#define MOD_MASK_ALL MOD_MASK_CSAG
 #define MOD_MASK_CTRL_L (MOD_BIT(KC_LCTL))
 #define MOD_MASK_CTRL_R (MOD_BIT(KC_RCTL))
 #define MOD_MASK_ALT_L (MOD_BIT(KC_LALT))
@@ -29,6 +30,7 @@
 #define CK_02 QK_KB_2
 #define CK_03 QK_KB_3
 #define CK_04 QK_KB_4
+
 #define CK_05 QK_KB_5
 #define CK_06 QK_KB_6
 #define CK_07 QK_KB_7

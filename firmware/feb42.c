@@ -32,19 +32,20 @@ void keyboard_post_init_user(void) {
 }
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  bool cancel = false;
-
-  // never mess with the bootloader key
-  if (keycode == QK_BOOT) return !cancel;
-
+  bool     cancel  = false;
   uint16_t current = keycode;
 
-  store_mods(current, record);
+  // never mess with the bootloader key
+  if (current == QK_BOOT) return !cancel;
+
+  store_mods();
+
   if (!cancel) cancel = exec_os(current, record);
 
 #ifdef RGB_MATRIX_ENABLE
   if (!cancel) cancel = exec_rgb(current, record);
 #endif
+
 #ifdef REMAP_ENABLE
   if (!cancel) exec_remap(&current, record);
 #endif
