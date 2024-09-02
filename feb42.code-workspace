@@ -1,15 +1,6 @@
 {
   "folders": [
     {
-      "name": "pcb",
-      "path": "./pcb"
-    },
-    {
-      "name": "firmware",
-      "path": "./firmware"
-    },
-    {
-      "name": "root",
       "path": "."
     }
   ],

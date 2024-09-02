@@ -4542,6 +4542,411 @@
 				)
 			)
 		)
+		(symbol "Mechanical:Housing_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim yes)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "N"
+				(at 4.445 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Housing_Pad"
+				(at 4.445 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 1.905 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 1.905 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Housing with connection pin"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "housing enclosure shield"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Housing_Pad_0_1"
+				(rectangle
+					(start -4.445 -0.635)
+					(end -0.635 -1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -3.81 -3.175)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center -1.27 -3.175)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.8862 -1.5748) (xy -3.8354 -1.3716)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.7846 -1.6764) (xy -3.429 -1.6764)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.7846 -1.2192) (xy -3.7338 -0.9652)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.683 -1.3208) (xy -3.3782 -1.3208)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.5814 -0.9144) (xy -3.2766 -0.9144)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.2766 -1.6256) (xy -3.2258 -1.3716)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.175 -1.2192) (xy -3.1242 -0.9652)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.9718 -1.5748) (xy -2.921 -1.3716)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.8702 -1.6764) (xy -2.5146 -1.6764)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.8702 -1.2192) (xy -2.8194 -0.9652)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.7686 -1.3208) (xy -2.4638 -1.3208)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.667 -0.9144) (xy -2.3622 -0.9144)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.3622 -1.6256) (xy -2.3114 -1.3716)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.2606 -1.2192) (xy -2.2098 -0.9652)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.0574 -1.5748) (xy -2.0066 -1.3716)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.9558 -1.6764) (xy -1.6002 -1.6764)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.9558 -1.2192) (xy -1.905 -0.9652)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.8542 -1.3208) (xy -1.5494 -1.3208)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.7526 -0.9144) (xy -1.4478 -0.9144)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.4478 -1.6256) (xy -1.397 -1.3716)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.3462 -1.2192) (xy -1.2954 -0.9652)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 0) (xy 0 0) (xy 3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -5.08 -4.445) (xy 0 -4.445) (xy 3.81 -0.635) (xy 3.81 3.81) (xy -1.27 3.81) (xy -5.08 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Housing_Pad_1_1"
+				(pin input line
+					(at -5.08 -5.08 90)
+					(length 2.54)
+					(name "PAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Power_Protection:PRTR5V0U2X"
 			(pin_names
 				(offset 0)
@@ -7325,6 +7730,12 @@
 		(uuid "2e1b4651-4760-4de3-961b-19800b1cba68")
 	)
 	(junction
+		(at 212.979 404.114)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "30b325d4-35c0-43d4-8004-c2ba8b961e58")
+	)
+	(junction
 		(at 292.1 460.248)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8115,12 +8526,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f33f7d25-c074-4cc4-b549-90f0315709a4")
-	)
-	(junction
-		(at 212.979 404.114)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f6e55028-3e55-4f6c-9a8e-5c6a299f1680")
 	)
 	(junction
 		(at 48.133 360.045)
@@ -9106,16 +9511,6 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 411.734) (xy 231.14 411.861)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b8e9a32-c82e-4702-ab11-1beeae37c4fb")
-	)
-	(wire
-		(pts
 			(xy 162.56 48.26) (xy 165.1 48.26)
 		)
 		(stroke
@@ -10096,6 +10491,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.599 411.734) (xy 231.14 411.734)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a37e2c35-015f-4cda-88e0-727678c0c421")
+	)
+	(wire
+		(pts
 			(xy 81.153 468.122) (xy 81.153 467.741)
 		)
 		(stroke
@@ -10546,6 +10951,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 411.734) (xy 231.14 411.861)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdae3307-49a9-4a81-92e2-1d92ff300e93")
+	)
+	(wire
+		(pts
 			(xy 130.81 307.975) (xy 130.81 311.785)
 		)
 		(stroke
@@ -10643,16 +11058,6 @@
 			(type default)
 		)
 		(uuid "d3f5b2ae-9acc-444b-b9b0-6e7bf12d866c")
-	)
-	(wire
-		(pts
-			(xy 220.599 411.734) (xy 231.14 411.734)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4238438-88a3-417a-b853-6ad09ad6daa0")
 	)
 	(wire
 		(pts
@@ -12236,7 +12641,7 @@
 	)
 	(global_label "SW38"
 		(shape input)
-		(at 115.873 168.148 0)
+		(at 115.873 165.608 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12246,7 +12651,7 @@
 		)
 		(uuid "436a16ce-0331-4975-82cf-121947402075")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 123.9381 168.148 0)
+			(at 123.9381 165.608 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12302,7 +12707,7 @@
 	)
 	(global_label "SW29"
 		(shape input)
-		(at 115.873 165.608 0)
+		(at 115.873 168.148 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12312,7 +12717,7 @@
 		)
 		(uuid "4664cd67-f51a-422f-add3-c0279fa5cbaf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 123.9381 165.608 0)
+			(at 123.9381 168.148 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14500,6 +14905,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 209.55 190.5 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0167fa22-ede7-4317-b657-d39cba304b0c")
+		(property "Reference" "KEY24"
+			(at 214.63 189.5474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 214.63 192.0874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 211.455 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 211.455 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 209.55 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4cae6500-e847-40cc-b1db-8e6694d27de4")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 212.598 488.569 180)
 		(unit 1)
@@ -14771,6 +15243,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5149201"
+			(at 162.687 411.861 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "95e3d321-d0d1-465e-a68b-b36908f9bbf0")
 		)
@@ -14992,6 +15473,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 336.55 205.74 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "03555a7e-d25f-41b0-8d51-16354cb09791")
+		(property "Reference" "KEY39"
+			(at 341.63 204.7874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 341.63 207.3274 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_2.25U"
+			(at 338.455 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 338.455 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 336.55 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5d7c2a4-817e-41d6-881d-66f13a2d0716")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 44.196 323.596 90)
 		(unit 1)
@@ -15086,7 +15634,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 300.736 309.499 0)
 			(effects
 				(font
@@ -15157,7 +15705,7 @@
 		(fields_autoplaced yes)
 		(uuid "04afed4f-4bfe-4c51-9c06-dfe15c64e981")
 		(property "Reference" "HECC24"
-			(at 51.816 326.136 0)
+			(at 52.07 326.1359 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15165,8 +15713,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 51.816 328.676 0)
+		(property "Value" "0.1u"
+			(at 52.07 328.6759 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15236,7 +15784,7 @@
 		(fields_autoplaced yes)
 		(uuid "04b910e3-e714-4733-8c55-b20a3857ddb2")
 		(property "Reference" "HECC11"
-			(at 379.476 252.73 0)
+			(at 379.73 252.7299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15244,8 +15792,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 379.476 255.27 0)
+		(property "Value" "0.1u"
+			(at 379.73 255.2699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15801,7 +16349,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 135.763 308.864 0)
 			(effects
 				(font
@@ -15922,6 +16470,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "#PWR0241")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 341.63 190.5 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "075d69be-6096-4509-816f-ab1031b0ccb7")
+		(property "Reference" "KEY30"
+			(at 346.71 189.5474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 346.71 192.0874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 343.535 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 343.535 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 341.63 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "60f98ea6-ee57-4253-9356-6ddf01ed7952")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY30")
 					(unit 1)
 				)
 			)
@@ -16353,6 +16968,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 240.03 190.5 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "099954c9-35f1-49a2-9ecc-ac26036b547a")
+		(property "Reference" "KEY25"
+			(at 245.11 189.5474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 245.11 192.0874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 241.935 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 241.935 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 240.03 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02da2cd6-47ad-40f1-8eed-0aff1f02b5f3")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 211.582 331.978 0)
 		(unit 1)
@@ -16596,7 +17278,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 264.414 235.585 0)
 			(effects
 				(font
@@ -16667,7 +17349,7 @@
 		(fields_autoplaced yes)
 		(uuid "0c3e9b76-c52a-45d5-90be-489dda642880")
 		(property "Reference" "HECC34"
-			(at 382.016 326.136 0)
+			(at 381 326.1359 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16675,8 +17357,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 382.016 328.676 0)
+		(property "Value" "0.1u"
+			(at 381 328.6759 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17250,7 +17932,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 101.854 235.712 0)
 			(effects
 				(font
@@ -17356,6 +18038,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 265.811 411.607 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 265.811 411.607 0)
 			(effects
 				(font
@@ -17756,7 +18447,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 101.727 272.669 0)
 			(effects
 				(font
@@ -17834,7 +18525,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 70.485 309.245 0)
 			(effects
 				(font
@@ -18103,7 +18794,7 @@
 		(fields_autoplaced yes)
 		(uuid "128f3ca7-0168-46da-8b58-4b956d320a65")
 		(property "Reference" "HECC39"
-			(at 185.166 362.839 0)
+			(at 185.42 362.8389 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18111,8 +18802,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 185.166 365.379 0)
+		(property "Value" "0.1u"
+			(at 185.42 365.3789 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18182,7 +18873,7 @@
 		(fields_autoplaced yes)
 		(uuid "1322b81c-6b20-422b-bffe-f876abd3d0ae")
 		(property "Reference" "HECC7"
-			(at 246.126 252.73 0)
+			(at 246.38 252.7299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18190,8 +18881,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 246.126 255.27 0)
+		(property "Value" "0.1u"
+			(at 246.38 255.2699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18314,6 +19005,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "LEDC39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 229.87 160.02 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1401b679-3a20-43d3-9dbd-29cda34f1991")
+		(property "Reference" "KEY2"
+			(at 234.95 159.0674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "P"
+			(at 234.95 161.6074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 231.775 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 231.775 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 229.87 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a7a3ddd7-ef95-4300-8ccc-f1b245026f08")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY2")
 					(unit 1)
 				)
 			)
@@ -18953,7 +19711,7 @@
 		(fields_autoplaced yes)
 		(uuid "177e2c7d-bcf3-4e6d-94e2-a98d8c1fb52e")
 		(property "Reference" "HECC41"
-			(at 251.206 363.093 0)
+			(at 251.46 363.0929 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18961,8 +19719,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 251.206 365.633 0)
+		(property "Value" "0.1u"
+			(at 251.46 365.6329 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19075,6 +19833,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5149201"
+			(at 88.773 496.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0e0fbfcd-cff8-4a91-8513-88312b31b994")
 		)
@@ -19114,7 +19881,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 270.383 346.456 0)
 			(effects
 				(font
@@ -19307,6 +20074,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "LEDC41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 361.95 190.5 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "196e02cc-35b8-4003-b840-8f8455ac5326")
+		(property "Reference" "KEY31"
+			(at 367.03 189.5474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 367.03 192.0874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 363.855 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 363.855 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 361.95 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "15c03285-db14-4aa5-84b6-dab8fb409d4d")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY31")
 					(unit 1)
 				)
 			)
@@ -19518,6 +20352,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 64.897 468.122 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 64.897 468.122 0)
 			(effects
 				(font
@@ -19899,6 +20742,42 @@
 				(hide yes)
 			)
 		)
+		(property "Display value" "0.1uF"
+			(at 0 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 0 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 0 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg" "Samsung"
+			(at 0 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "67b105f4-96eb-417b-adf7-f60cfe137631")
 		)
@@ -19932,7 +20811,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 103.632 345.567 0)
 			(effects
 				(font
@@ -20010,7 +20889,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 199.39 272.796 0)
 			(effects
 				(font
@@ -20132,6 +21011,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 209.55 175.26 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f328208-3c75-452e-bf1f-ccce46466c6b")
+		(property "Reference" "KEY13"
+			(at 214.63 174.3074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 214.63 176.8474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.75U"
+			(at 211.455 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 211.455 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 209.55 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "274e7aa6-ff1f-49a3-a2b0-edcf1eac964b")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY13")
 					(unit 1)
 				)
 			)
@@ -20412,6 +21358,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 392.43 160.02 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "20c954ac-1c0a-44d6-ac00-d40dfa8f44db")
+		(property "Reference" "KEY10"
+			(at 397.51 159.0674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "W"
+			(at 397.51 161.6074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 394.335 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 394.335 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 392.43 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c473230c-61f6-4b0b-9bd5-39c6cff79fd0")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LED:SK6812")
 		(at 64.897 440.309 180)
 		(unit 1)
@@ -20457,6 +21470,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 64.897 440.309 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 64.897 440.309 0)
 			(effects
 				(font
@@ -20959,6 +21981,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 100.633 152.908 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3107ce4c-3dc4-4b99-8aa3-f8b9f1495ccf")
 		)
@@ -21195,7 +22226,7 @@
 		(fields_autoplaced yes)
 		(uuid "22679c45-683b-44c3-92f3-ec8b2519418b")
 		(property "Reference" "HECC21"
-			(at 314.706 289.687 0)
+			(at 314.96 289.6869 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21203,8 +22234,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 314.706 292.227 0)
+		(property "Value" "0.1u"
+			(at 314.96 292.2269 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21310,6 +22341,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 203.2 36.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C307413"
 			(at 203.2 36.195 0)
 			(effects
 				(font
@@ -21584,6 +22624,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5149201"
+			(at 113.284 467.868 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e4823d72-8729-41c5-a6b4-917062cb8d59")
 		)
@@ -21796,6 +22845,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 389.89 414.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C11702"
 			(at 389.89 414.655 0)
 			(effects
 				(font
@@ -22081,6 +23139,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 188.468 496.062 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 188.468 496.062 0)
 			(effects
 				(font
@@ -22403,6 +23470,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 430.53 205.74 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "287e6095-7289-4582-a410-2aef384f683b")
+		(property "Reference" "KEY42"
+			(at 435.61 204.7874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 435.61 207.3274 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.25U"
+			(at 432.435 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 432.435 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 430.53 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ff7dca4b-161c-4c79-8107-bfdb7d0f234b")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 227.076 234.95 0)
 		(unit 1)
@@ -22478,7 +23612,7 @@
 		(fields_autoplaced yes)
 		(uuid "29def532-5ad9-4cdd-9956-f484b9ca6334")
 		(property "Reference" "HECC19"
-			(at 247.396 289.687 0)
+			(at 247.65 289.6869 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22486,8 +23620,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 247.396 292.227 0)
+		(property "Value" "0.1u"
+			(at 247.65 292.2269 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22675,6 +23809,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 264.16 45.085 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6659a31c-d1f9-43f7-a622-9d47a1a536bf")
 		)
@@ -22757,6 +23900,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 397.51 175.26 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c1d8400-c2f3-4979-93db-14adea5d70a4")
+		(property "Reference" "KEY22"
+			(at 402.59 174.3074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 402.59 176.8474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 399.415 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 399.415 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 397.51 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed1791de-ac5e-4732-ab07-aa8efc87b9f1")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 341.503 254 0)
 		(unit 1)
@@ -22767,7 +23977,7 @@
 		(fields_autoplaced yes)
 		(uuid "2c27ed41-784f-42e8-b3fe-0f37af10b0e7")
 		(property "Reference" "HECC10"
-			(at 345.186 252.73 0)
+			(at 345.44 252.7299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22775,8 +23985,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 345.186 255.27 0)
+		(property "Value" "0.1u"
+			(at 345.44 255.2699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22977,7 +24187,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d6fb93f-c37d-4342-8291-6f6f3b02fd8e")
 		(property "Reference" "HECC13"
-			(at 51.816 289.687 0)
+			(at 50.8 289.6869 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22985,8 +24195,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 51.816 292.227 0)
+		(property "Value" "0.1u"
+			(at 50.8 292.2269 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23129,7 +24339,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 201.295 310.007 0)
 			(effects
 				(font
@@ -23200,7 +24410,7 @@
 		(fields_autoplaced yes)
 		(uuid "2eb85f1e-3d96-4ad8-b1f5-dd65255c0995")
 		(property "Reference" "HECC42"
-			(at 284.226 363.347 0)
+			(at 284.48 363.3469 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23208,8 +24418,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 284.226 365.887 0)
+		(property "Value" "0.1u"
+			(at 284.48 365.8869 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23799,6 +25009,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25117"
+			(at 397.51 419.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6d48f1eb-d9e3-41ab-9413-45af36750dd8")
 		)
@@ -23825,7 +25044,7 @@
 		(fields_autoplaced yes)
 		(uuid "31f91e7a-cb4e-4e87-96aa-b0fa48fc42bd")
 		(property "Reference" "HECC15"
-			(at 115.316 289.56 0)
+			(at 115.57 289.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23833,8 +25052,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 115.316 292.1 0)
+		(property "Value" "0.1u"
+			(at 115.57 292.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24192,7 +25411,7 @@
 		(fields_autoplaced yes)
 		(uuid "3509cf12-0929-4345-850b-42eec19f26cc")
 		(property "Reference" "HECC40"
-			(at 218.186 362.839 0)
+			(at 218.44 362.8389 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24200,8 +25419,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 218.186 365.379 0)
+		(property "Value" "0.1u"
+			(at 218.44 365.3789 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24327,6 +25546,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 331.47 160.02 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "35700482-f448-4587-9aa5-558d2b633d0e")
+		(property "Reference" "KEY7"
+			(at 336.55 159.7024 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "T"
+			(at 336.55 161.6075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 333.375 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 333.375 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 331.47 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "65a13e1c-e1a8-4879-aaa4-3ea96fe1333c")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LED:SK6812")
 		(at 113.411 439.928 180)
 		(unit 1)
@@ -24372,6 +25658,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 113.411 439.928 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 113.411 439.928 0)
 			(effects
 				(font
@@ -24792,7 +26087,7 @@
 		(fields_autoplaced yes)
 		(uuid "372ed577-decc-4ccb-b57b-3fa97b91102c")
 		(property "Reference" "HECC33"
-			(at 347.726 326.263 0)
+			(at 347.98 326.2629 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24800,8 +26095,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 347.726 328.803 0)
+		(property "Value" "0.1u"
+			(at 347.98 328.8029 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24987,6 +26282,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "#PWR0138")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 410.21 205.74 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "39200f10-6ca0-45d8-9df3-ba7abe684639")
+		(property "Reference" "KEY41"
+			(at 415.29 204.7874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 415.29 207.3274 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 412.115 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 412.115 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 410.21 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "635c2796-6eb9-4f6e-a0e7-09d42fe09542")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY41")
 					(unit 1)
 				)
 			)
@@ -25187,6 +26549,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 162.56 440.182 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 162.56 440.182 0)
 			(effects
 				(font
@@ -25596,7 +26967,7 @@
 		(fields_autoplaced yes)
 		(uuid "3b74bf99-e259-465b-b7bd-6d964abd5dc9")
 		(property "Reference" "HECC38"
-			(at 152.146 362.712 0)
+			(at 152.4 362.7119 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25604,8 +26975,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 152.146 365.252 0)
+		(property "Value" "0.1u"
+			(at 152.4 365.2519 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25682,7 +27053,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 398.399 235.839 0)
 			(effects
 				(font
@@ -25737,6 +27108,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "HEC12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 356.87 175.26 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3bedcd53-7f9c-47e3-ad3e-e611393f1dc3")
+		(property "Reference" "KEY20"
+			(at 361.95 174.3074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 361.95 176.8474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 358.775 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 358.775 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 356.87 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "95d2dc3f-eba8-4cca-adb0-feaa4edb4baa")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY20")
 					(unit 1)
 				)
 			)
@@ -25922,6 +27360,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 140.335 36.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
 			(at 140.335 36.195 0)
 			(effects
 				(font
@@ -26348,6 +27795,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C477918"
+			(at 83.82 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "dcf511c5-5abd-4063-8739-92aad87258e8")
 		)
@@ -26383,7 +27839,7 @@
 		(fields_autoplaced yes)
 		(uuid "3fa14d9a-3d48-4510-b8b4-dd4589b3fd38")
 		(property "Reference" "HECC4"
-			(at 148.336 252.476 0)
+			(at 148.59 252.4759 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26391,8 +27847,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 148.336 255.016 0)
+		(property "Value" "0.1u"
+			(at 148.59 255.0159 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26527,7 +27983,7 @@
 		(fields_autoplaced yes)
 		(uuid "3ffe9df2-67d1-4161-a68f-9cf1e08e7381")
 		(property "Reference" "HECC29"
-			(at 215.646 326.898 0)
+			(at 214.63 326.8979 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26535,8 +27991,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 215.646 329.438 0)
+		(property "Value" "0.1u"
+			(at 214.63 329.4379 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26590,6 +28046,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "HECC29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 430.53 190.5 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40175a3b-4264-451b-82b3-354e0b28a26d")
+		(property "Reference" "KEY34"
+			(at 435.61 189.5474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 435.61 192.0874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.75U"
+			(at 432.435 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 432.435 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 430.53 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "972c7126-724e-48a2-ac1a-18be3376f8b8")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY34")
 					(unit 1)
 				)
 			)
@@ -26756,7 +28279,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 331.216 235.839 0)
 			(effects
 				(font
@@ -26892,7 +28415,7 @@
 		(fields_autoplaced yes)
 		(uuid "4111941e-378d-4966-ab1d-9f77e1139cab")
 		(property "Reference" "HECC12"
-			(at 412.496 252.73 0)
+			(at 412.75 252.7299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26900,8 +28423,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 412.496 255.27 0)
+		(property "Value" "0.1u"
+			(at 412.75 255.2699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26955,6 +28478,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "HECC12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 321.31 190.5 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4163b54a-d529-46b2-bed4-3092e0b29eee")
+		(property "Reference" "KEY29"
+			(at 326.39 189.5474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 326.39 192.0874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 323.215 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 323.215 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 321.31 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "89eb30f9-e8dc-42c1-8fc1-27a33c64224d")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY29")
 					(unit 1)
 				)
 			)
@@ -27327,7 +28917,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 334.137 309.372 0)
 			(effects
 				(font
@@ -27398,7 +28988,7 @@
 		(fields_autoplaced yes)
 		(uuid "43d58d94-80f1-4b98-894a-81ecf9dbd802")
 		(property "Reference" "HECC35"
-			(at 51.816 362.585 0)
+			(at 52.07 362.5849 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27406,8 +28996,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 51.816 365.125 0)
+		(property "Value" "0.1u"
+			(at 52.07 365.1249 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28203,7 +29793,7 @@
 				)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "10k"
 			(at 50.8 109.22 90)
 			(effects
 				(font
@@ -28231,6 +29821,15 @@
 		)
 		(property "Description" ""
 			(at 50.8 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 50.8 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28667,6 +30266,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 260.35 205.74 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "494dbf44-774b-4758-bb3c-7342cd7bbe09")
+		(property "Reference" "KEY37"
+			(at 265.43 204.7874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 265.43 207.3274 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 262.255 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 262.255 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 260.35 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "175c4505-c56d-4582-9193-5e56ff655ae0")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 377.19 290.83 0)
 		(unit 1)
@@ -28677,7 +30343,7 @@
 		(fields_autoplaced yes)
 		(uuid "49bae386-146e-442f-8dc3-639d2d783c51")
 		(property "Reference" "HECC23"
-			(at 380.746 289.56 0)
+			(at 381 289.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28685,8 +30351,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 380.746 292.1 0)
+		(property "Value" "0.1u"
+			(at 381 292.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28859,6 +30525,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 155.673 178.308 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C98457"
 			(at 155.673 178.308 0)
 			(effects
 				(font
@@ -29312,7 +30987,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 168.783 309.245 0)
 			(effects
 				(font
@@ -29419,6 +31094,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 171.45 36.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C307413"
 			(at 171.45 36.195 0)
 			(effects
 				(font
@@ -30502,7 +32186,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 69.342 272.796 0)
 			(effects
 				(font
@@ -30580,7 +32264,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 37.719 309.245 0)
 			(effects
 				(font
@@ -31014,7 +32698,7 @@
 		(fields_autoplaced yes)
 		(uuid "5993ba7d-62d5-40f3-971a-c5bb29a44771")
 		(property "Reference" "HECC2"
-			(at 83.566 252.603 0)
+			(at 83.82 252.6029 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31022,8 +32706,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 83.566 255.143 0)
+		(property "Value" "0.1u"
+			(at 83.82 255.1429 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31144,81 +32828,6 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "#PWR0227")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:SK6812")
-		(at 212.979 411.734 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "59f3e4a6-9320-44e5-8820-7998ae62e728")
-		(property "Reference" "LED8"
-			(at 223.139 408.6099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812"
-			(at 223.139 411.1499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "project:SK6812-MINI-E"
-			(at 214.249 419.354 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 215.519 421.259 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 212.979 411.734 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "57167cfa-9373-4145-ba8f-29c8d79e9f2b")
-		)
-		(pin "2"
-			(uuid "da61f889-25a6-4154-a83e-bcb20962c39e")
-		)
-		(pin "3"
-			(uuid "d1dec1dc-1256-41a5-bb6b-0d7ad43d4bba")
-		)
-		(pin "4"
-			(uuid "e9fef204-2a6d-4072-889a-c691c30f025a")
-		)
-		(instances
-			(project "feb42"
-				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
-					(reference "LED8")
 					(unit 1)
 				)
 			)
@@ -31583,7 +33192,7 @@
 		(fields_autoplaced yes)
 		(uuid "5b165b2e-0086-4017-8bbc-5d591c6a9b5f")
 		(property "Reference" "HECC32"
-			(at 314.706 326.39 0)
+			(at 314.96 326.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31591,8 +33200,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 314.706 328.93 0)
+		(property "Value" "0.1u"
+			(at 314.96 328.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31800,7 +33409,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 367.665 309.245 0)
 			(effects
 				(font
@@ -31878,7 +33487,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 166.497 235.839 0)
 			(effects
 				(font
@@ -31957,7 +33566,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 180.34 255.2699 0)
 			(effects
 				(font
@@ -32084,6 +33693,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 209.55 205.74 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5cc70982-5619-4be5-a38f-def4f3468b1d")
+		(property "Reference" "KEY35"
+			(at 214.63 204.7874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 214.63 207.3274 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 211.455 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 211.455 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 209.55 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc6f406d-b8c2-442a-8c2c-4f9487d874c6")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LED:SK6812")
 		(at 88.9 411.988 0)
 		(unit 1)
@@ -32129,6 +33805,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 88.9 411.988 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 88.9 411.988 0)
 			(effects
 				(font
@@ -32301,7 +33986,7 @@
 		(fields_autoplaced yes)
 		(uuid "5e4cc986-d1a6-4213-bbdd-e6de2824496e")
 		(property "Reference" "HECC37"
-			(at 117.856 362.458 0)
+			(at 116.84 362.4579 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32309,8 +33994,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 117.856 364.998 0)
+		(property "Value" "0.1u"
+			(at 116.84 364.9979 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32520,7 +34205,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 37.846 345.694 0)
 			(effects
 				(font
@@ -32575,6 +34260,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "HEC35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 387.35 190.5 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5f789bcb-ffb2-411c-bf59-e5dfe2124614")
+		(property "Reference" "KEY32"
+			(at 392.43 189.5474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 392.43 192.0874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.25U"
+			(at 389.255 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 389.255 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 387.35 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c7e81c33-2e12-4919-a539-f0a5b6a97bbf")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY32")
 					(unit 1)
 				)
 			)
@@ -32700,6 +34452,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5149201"
+			(at 137.922 439.928 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f8f0bd1d-07ac-45b0-8b0a-9b83959f0604")
 		)
@@ -32805,7 +34566,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 103.124 309.372 0)
 			(effects
 				(font
@@ -32883,7 +34644,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 134.493 235.585 0)
 			(effects
 				(font
@@ -33329,6 +35090,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5149201"
+			(at 188.468 411.734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a6468ec1-abc8-4d5c-8ff7-9604c8e7609a")
 		)
@@ -33434,7 +35204,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 37.592 272.796 0)
 			(effects
 				(font
@@ -33624,6 +35394,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "#PWR0307")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 290.83 160.02 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "67559d99-09e5-4144-8454-b9d29478cae7")
+		(property "Reference" "KEY5"
+			(at 295.91 159.7024 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "U"
+			(at 295.91 161.6075 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 292.735 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 292.735 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 290.83 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "15d01ee3-b204-44dd-8925-d82b0319bd8d")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY5")
 					(unit 1)
 				)
 			)
@@ -33839,7 +35676,7 @@
 		(fields_autoplaced yes)
 		(uuid "68218986-6655-4b68-9313-9527147e3cba")
 		(property "Reference" "HECC31"
-			(at 281.686 326.771 0)
+			(at 281.94 326.7709 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33847,8 +35684,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 281.686 329.311 0)
+		(property "Value" "0.1u"
+			(at 281.94 329.3109 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34164,6 +36001,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5149201"
+			(at 212.598 496.189 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "45f7f584-acf7-49ac-9767-3b295e82dc91")
 		)
@@ -34384,6 +36230,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 260.35 190.5 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6c732b37-9121-4f94-bb33-e0b23238b44f")
+		(property "Reference" "KEY26"
+			(at 265.43 189.5474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 265.43 192.0874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.25U"
+			(at 262.255 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 262.255 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 260.35 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8e035ce4-5a6c-4cd3-a8d5-9b0a5f62ca76")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 202.565 238.76 0)
 		(unit 1)
@@ -34560,6 +36473,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 377.19 414.655 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
 			(at 377.19 414.655 0)
 			(effects
 				(font
@@ -34780,6 +36702,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C13585"
+			(at 249.555 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "64a3206d-eedc-4a44-9b21-2ffd62a32ba4")
 		)
@@ -34849,6 +36780,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25741"
+			(at 269.875 50.165 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9131b559-ede6-4021-bf20-e7ed9b26a4e2")
 		)
@@ -34859,6 +36799,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "BRR4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 295.91 175.26 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e8f749e-f21c-41c7-a799-6d7bae1da57b")
+		(property "Reference" "KEY17"
+			(at 300.99 174.3074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 300.99 176.8474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 297.815 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 297.815 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 295.91 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0f72e80d-4c2f-4b78-89af-a64de33ec434")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY17")
 					(unit 1)
 				)
 			)
@@ -35541,6 +37548,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5149201"
+			(at 88.9 440.182 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9aa3f3e4-23f3-43be-a8f1-2c20056a36c1")
 		)
@@ -35694,6 +37710,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C307413"
+			(at 181.61 36.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3b1cc0ee-731d-48b5-9779-1cb19105f83b")
 		)
@@ -35727,7 +37752,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 138.049 345.821 0)
 			(effects
 				(font
@@ -36024,7 +38049,7 @@
 		(fields_autoplaced yes)
 		(uuid "72ca8463-1d16-4899-919e-7f9f69b49d65")
 		(property "Reference" "HECC20"
-			(at 281.686 289.56 0)
+			(at 280.67 289.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36032,8 +38057,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 281.686 292.1 0)
+		(property "Value" "0.1u"
+			(at 280.67 292.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36193,7 +38218,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 69.723 235.712 0)
 			(effects
 				(font
@@ -36506,6 +38531,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5149201"
+			(at 265.811 467.995 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "71f3c711-c7fd-4ccf-b3d2-4252884d8d11")
 		)
@@ -36538,7 +38572,7 @@
 		(fields_autoplaced yes)
 		(uuid "752b9355-1deb-4d1f-908f-2d5900f2346a")
 		(property "Reference" "HECC14"
-			(at 83.566 289.687 0)
+			(at 82.55 289.6869 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36546,8 +38580,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 83.566 292.227 0)
+		(property "Value" "0.1u"
+			(at 82.55 292.2269 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36624,7 +38658,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 267.716 309.88 0)
 			(effects
 				(font
@@ -36811,6 +38845,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "#PWR090")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 433.07 160.02 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7769c80b-6db5-459c-ad3c-4e53e8b33333")
+		(property "Reference" "KEY12"
+			(at 438.15 159.0674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ESC"
+			(at 438.15 161.6074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 434.975 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 434.975 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 433.07 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ac2ce47-293c-43f9-8832-5e28c5d8db67")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY12")
 					(unit 1)
 				)
 			)
@@ -37274,7 +39375,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k5"
+		(property "Value" "1.5k"
 			(at 55.88 57.15 0)
 			(effects
 				(font
@@ -37380,6 +39481,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 45.72 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a8637cbc-183d-4a69-9086-da1e78654ffd")
 		)
@@ -37406,7 +39516,7 @@
 		(fields_autoplaced yes)
 		(uuid "7bdb95d6-d0e9-442b-b3b5-02cbf4319822")
 		(property "Reference" "HECC9"
-			(at 310.896 252.476 0)
+			(at 311.15 252.4759 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37414,8 +39524,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 310.896 255.016 0)
+		(property "Value" "0.1u"
+			(at 311.15 255.0159 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37641,7 +39751,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 166.624 272.796 0)
 			(effects
 				(font
@@ -37854,7 +39964,7 @@
 		(fields_autoplaced yes)
 		(uuid "7cec391f-4c4d-4f8e-88cb-0921c0a3af9a")
 		(property "Reference" "HECC27"
-			(at 149.606 325.755 0)
+			(at 149.86 325.7549 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37862,8 +39972,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 149.606 328.295 0)
+		(property "Value" "0.1u"
+			(at 149.86 328.2949 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38058,6 +40168,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 48.133 152.908 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e77eeaeb-744e-4839-95c1-744e66a23d61")
 		)
@@ -38091,7 +40210,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 297.688 235.585 0)
 			(effects
 				(font
@@ -38331,6 +40450,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 103.173 178.308 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C98457"
 			(at 103.173 178.308 0)
 			(effects
 				(font
@@ -38762,6 +40890,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5149201"
+			(at 238.887 440.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8079cb39-c304-4566-9f90-8cc0f9cc963e")
 		)
@@ -38895,6 +41032,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 39.243 469.011 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 39.243 469.011 0)
 			(effects
 				(font
@@ -39335,6 +41481,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5149201"
+			(at 212.598 467.995 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "00bbe394-b1e9-4701-9318-9fb9c4471756")
 		)
@@ -39756,7 +41911,7 @@
 		(at 239.395 106.045 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "86255c5d-e86d-4c9d-ab44-31a47f0c5c06")
@@ -39950,6 +42105,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5149201"
+			(at 265.811 439.928 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "56d8b3d4-04d7-4e0c-943b-1baac2b8d2ce")
 		)
@@ -40072,7 +42236,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 232.029 235.839 0)
 			(effects
 				(font
@@ -40402,6 +42566,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5149201"
+			(at 292.608 439.674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "07ef2b02-30b9-4046-bbd3-6836571e790d")
 		)
@@ -40469,6 +42642,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 137.795 411.861 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 137.795 411.861 0)
 			(effects
 				(font
@@ -40593,7 +42775,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 70.485 345.694 0)
 			(effects
 				(font
@@ -40929,7 +43111,7 @@
 		(fields_autoplaced yes)
 		(uuid "8c993560-c928-4d08-b480-4e15409debf4")
 		(property "Reference" "HECC1"
-			(at 51.816 252.476 0)
+			(at 50.8 252.4759 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40937,8 +43119,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 51.816 255.016 0)
+		(property "Value" "0.1u"
+			(at 50.8 255.0159 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41395,6 +43577,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 270.51 160.02 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "908b6f42-b48a-467d-9124-daa2ef6e9529")
+		(property "Reference" "KEY4"
+			(at 275.59 159.0674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "I"
+			(at 275.59 161.6074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 272.415 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 272.415 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 270.51 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ebcef89-60b0-4154-bcd9-cee06b80e74c")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 329.311 271.907 0)
 		(unit 1)
@@ -41813,6 +44062,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 412.75 160.02 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9362a95d-c550-4b73-bc63-12766640a733")
+		(property "Reference" "KEY11"
+			(at 417.83 159.0674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Q"
+			(at 417.83 161.6074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 414.655 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 414.655 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 412.75 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a3ea79d7-c0d7-47da-8e0e-0970e96aa05e")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 32.639 294.767 0)
 		(unit 1)
@@ -42024,7 +44340,7 @@
 		(fields_autoplaced yes)
 		(uuid "95c91736-5259-4077-8ac4-4da69a0c1db9")
 		(property "Reference" "HECC36"
-			(at 84.836 362.585 0)
+			(at 83.82 362.5849 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42032,8 +44348,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 84.836 365.125 0)
+		(property "Value" "0.1u"
+			(at 83.82 365.1249 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42302,6 +44618,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "#PWR0162")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 427.99 175.26 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "968ed4a2-daae-46ca-8e40-bfbd0158c7b7")
+		(property "Reference" "KEY23"
+			(at 433.07 174.3074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 433.07 176.8474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.25U"
+			(at 429.895 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 429.895 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 427.99 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "45d75b6d-5a10-42b5-b1f4-cfc0daaa0518")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY23")
 					(unit 1)
 				)
 			)
@@ -42638,6 +45021,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 372.11 160.02 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9883d7f4-b80e-4999-8403-80e0af7e0a1a")
+		(property "Reference" "KEY9"
+			(at 377.19 159.0674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "E"
+			(at 377.19 161.6074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 374.015 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 374.015 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 372.11 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e9628f06-ebf5-4726-9cec-55b115d43c94")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LED:SK6812")
 		(at 113.411 411.861 0)
 		(unit 1)
@@ -42683,6 +45133,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 113.411 411.861 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 113.411 411.861 0)
 			(effects
 				(font
@@ -43129,7 +45588,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 233.426 272.796 0)
 			(effects
 				(font
@@ -44107,6 +46566,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5149201"
+			(at 65.024 411.861 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fb3ce242-dadf-4fd0-90b0-a7f37d726dd4")
 		)
@@ -44123,6 +46591,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "LED2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 351.79 160.02 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a2aedcd2-9ded-47bd-8daf-91afefc0bdaa")
+		(property "Reference" "KEY8"
+			(at 356.87 159.0674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 356.87 161.6074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 353.695 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 353.695 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 351.79 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "34da4821-bc39-44c8-add7-2a7339050c1b")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY8")
 					(unit 1)
 				)
 			)
@@ -44243,6 +46778,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 64.897 496.824 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 64.897 496.824 0)
 			(effects
 				(font
@@ -44534,6 +47078,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "LEDC26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 234.95 205.74 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4d9945d-96db-43f7-b881-dacfda37c7cf")
+		(property "Reference" "KEY36"
+			(at 240.03 204.7874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 240.03 207.3274 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 236.855 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.855 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 234.95 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ee045184-8a6f-43d1-8d16-1f1f6814a0cc")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY36")
 					(unit 1)
 				)
 			)
@@ -45164,6 +47775,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 209.55 160.02 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a769b77a-ffc1-4034-84ee-cf03016ae741")
+		(property "Reference" "KEY1"
+			(at 214.63 159.0674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BSP"
+			(at 214.63 161.6074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 211.455 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 211.455 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 209.55 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aea5763e-1d33-4f89-9af8-d5f63a2dbcc8")
+		)
+		(instances
+			(project ""
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 211.074 360.299 90)
 		(unit 1)
@@ -45251,7 +47929,7 @@
 		(fields_autoplaced yes)
 		(uuid "a7d93455-5dc6-4bf8-bff6-1babf9e60205")
 		(property "Reference" "HECC18"
-			(at 213.106 289.687 0)
+			(at 213.36 289.6869 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -45259,8 +47937,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 213.106 292.227 0)
+		(property "Value" "0.1u"
+			(at 213.36 292.2269 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -45518,6 +48196,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 311.15 160.02 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a8f6a26d-1630-4d23-9286-083f8e4e762e")
+		(property "Reference" "KEY6"
+			(at 316.23 159.0674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Y"
+			(at 316.23 161.6074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 313.055 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 313.055 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 311.15 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "db4803fd-4e0c-4ed9-9d6c-53e92f7ba38a")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LED:SK6812")
 		(at 238.76 411.861 0)
 		(unit 1)
@@ -45563,6 +48308,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 238.76 411.861 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 238.76 411.861 0)
 			(effects
 				(font
@@ -45864,6 +48618,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 149.86 36.195 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "976ecc4e-402f-43b2-a0cf-6a3b8ceb434b")
 		)
@@ -46023,6 +48786,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "HE1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 316.23 175.26 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab5f5739-e7de-47f9-929a-04912362b937")
+		(property "Reference" "KEY18"
+			(at 321.31 174.3074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 321.31 176.8474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 318.135 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 318.135 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 316.23 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1c1632f-a147-4a31-901c-8e615aa4b93c")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY18")
 					(unit 1)
 				)
 			)
@@ -46626,11 +49456,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 234.95 175.26 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ae2d41c0-f9a4-4566-85cd-836bfdd026ce")
+		(property "Reference" "KEY14"
+			(at 240.03 174.3074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 240.03 176.8474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 236.855 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.855 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 234.95 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f1635bce-ca89-48d9-bf65-6dd44dc5f7cc")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 224.79 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -46670,6 +49567,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 224.79 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2886897"
 			(at 224.79 48.26 0)
 			(effects
 				(font
@@ -47164,6 +50070,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 275.59 175.26 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2770245-4a49-415b-900d-e5424b51dce8")
+		(property "Reference" "KEY16"
+			(at 280.67 174.3074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 280.67 176.8474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 277.495 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 277.495 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 275.59 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d73383d9-e4a7-456c-8cc3-d441336f6af8")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 203.454 348.869 90)
 		(unit 1)
@@ -47181,7 +50154,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 204.597 345.948 0)
 			(effects
 				(font
@@ -47294,6 +50267,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C11702"
+			(at 234.315 66.675 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fbba9d4e-80b6-46fd-8290-017204b77370")
 		)
@@ -47355,6 +50337,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 137.795 467.487 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 137.795 467.487 0)
 			(effects
 				(font
@@ -47504,6 +50495,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1015"
+			(at 191.135 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3872dab5-1007-4209-8fa0-0087586e1fd7")
 		)
@@ -47565,6 +50565,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 39.37 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 39.37 497.84 0)
 			(effects
 				(font
@@ -47886,7 +50895,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 171.323 345.948 0)
 			(effects
 				(font
@@ -47993,6 +51002,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 24.13 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
 			(at 24.13 118.11 0)
 			(effects
 				(font
@@ -48239,7 +51257,7 @@
 				)
 			)
 		)
-		(property "Footprint" "project:L_0402_1005Metric"
+		(property "Footprint" "project:L_1210_3225Metric"
 			(at 95.25 33.02 0)
 			(effects
 				(font
@@ -48259,6 +51277,15 @@
 		)
 		(property "Description" "Inductor"
 			(at 95.25 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C18184936"
+			(at 95.25 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48459,7 +51486,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 199.898 235.839 0)
 			(effects
 				(font
@@ -48514,6 +51541,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "HEC6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 336.55 175.26 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b89a1d65-4777-4bf9-af15-3ae7d07e9c1c")
+		(property "Reference" "KEY19"
+			(at 341.63 174.3074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 341.63 176.8474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 338.455 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 338.455 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 336.55 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07f6a01c-f3cf-4407-8278-fc780b0cfaa0")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY19")
 					(unit 1)
 				)
 			)
@@ -48596,7 +51690,7 @@
 		(fields_autoplaced yes)
 		(uuid "b9232d12-2c8d-4026-b0b3-5c1d2bc5e878")
 		(property "Reference" "HECC26"
-			(at 116.586 326.263 0)
+			(at 116.84 326.2629 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48604,8 +51698,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 116.586 328.803 0)
+		(property "Value" "0.1u"
+			(at 116.84 328.8029 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48682,7 +51776,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 237.236 346.202 0)
 			(effects
 				(font
@@ -49061,6 +52155,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5149201"
+			(at 88.773 467.741 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e38b2738-9478-47b5-a96c-e73f9fe7531a")
 		)
@@ -49077,6 +52180,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "LED26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 250.19 160.02 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "be3f996a-dcd5-4aa8-8347-b797269f4b70")
+		(property "Reference" "KEY3"
+			(at 255.27 159.0674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "O"
+			(at 255.27 161.6074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 252.095 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 252.095 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 250.19 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6cae43c4-e550-476f-9352-06bccc6cbc50")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY3")
 					(unit 1)
 				)
 			)
@@ -49231,7 +52401,7 @@
 		(fields_autoplaced yes)
 		(uuid "bec5b4e7-c97b-4ac8-8beb-94f14a1058f4")
 		(property "Reference" "HECC17"
-			(at 180.086 289.687 0)
+			(at 180.34 289.6869 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49239,8 +52409,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 180.086 292.227 0)
+		(property "Value" "0.1u"
+			(at 180.34 292.2269 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -49345,6 +52515,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 188.341 467.614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 188.341 467.614 0)
 			(effects
 				(font
@@ -49727,6 +52906,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 238.76 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7921f994-afd1-49b0-8a74-b0946d6b1783")
 		)
@@ -50060,6 +53248,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5149201"
+			(at 137.668 496.062 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "88405825-f9aa-469a-89f5-2265a5ba0dee")
 		)
@@ -50127,6 +53324,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 212.852 440.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 212.852 440.055 0)
 			(effects
 				(font
@@ -50528,6 +53734,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 162.56 496.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 162.56 496.316 0)
 			(effects
 				(font
@@ -51349,6 +54564,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C108516"
+			(at 160.02 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e2d3b420-bbab-41c2-a5aa-67a0b28a277b")
 		)
@@ -51692,6 +54916,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 268.605 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4c82fa09-685c-4f3e-ad45-ffc7711d0d92")
 		)
@@ -51753,6 +54986,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 113.157 496.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 113.157 496.316 0)
 			(effects
 				(font
@@ -51859,7 +55101,7 @@
 		(fields_autoplaced yes)
 		(uuid "cb015554-94b7-4f1e-b6ac-59235be145da")
 		(property "Reference" "HECC30"
-			(at 248.666 326.771 0)
+			(at 248.92 326.7709 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51867,8 +55109,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 248.666 329.311 0)
+		(property "Value" "0.1u"
+			(at 248.92 329.3109 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52173,6 +55415,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 50.673 178.308 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C98457"
 			(at 50.673 178.308 0)
 			(effects
 				(font
@@ -52519,6 +55770,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C82045"
+			(at 383.54 416.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "03b2f329-5ab9-4f02-9f0d-95f3a9fddbb2")
 		)
@@ -52749,7 +56009,7 @@
 		(fields_autoplaced yes)
 		(uuid "cd64d75e-c3da-4a19-a2ae-1e0186a4cf5e")
 		(property "Reference" "HECC6"
-			(at 213.106 252.73 0)
+			(at 213.36 252.7299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52757,8 +56017,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 213.106 255.27 0)
+		(property "Value" "0.1u"
+			(at 213.36 255.2699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52828,7 +56088,7 @@
 		(fields_autoplaced yes)
 		(uuid "cd8608ac-ba57-41a9-be31-62d404d6b6c9")
 		(property "Reference" "HECC25"
-			(at 84.836 326.136 0)
+			(at 83.82 326.1359 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52836,8 +56096,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 84.836 328.676 0)
+		(property "Value" "0.1u"
+			(at 83.82 328.6759 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -52968,6 +56228,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "HER23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 377.19 175.26 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce66dfc9-2994-4040-81e1-b29e5e5f7e49")
+		(property "Reference" "KEY21"
+			(at 382.27 174.3074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 382.27 176.8474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 379.095 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 379.095 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 377.19 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "383def45-b0f2-43ca-9b2d-43068c56c60b")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY21")
 					(unit 1)
 				)
 			)
@@ -53848,6 +57175,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C26083"
+			(at 255.905 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4a6024cf-6658-4295-9d69-b361e7233520")
 		)
@@ -54072,7 +57408,7 @@
 		(fields_autoplaced yes)
 		(uuid "d3df7da3-fc01-4b3e-a14d-4b9c9786b9b1")
 		(property "Reference" "HECC8"
-			(at 277.876 252.476 0)
+			(at 278.13 252.4759 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54080,8 +57416,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 277.876 255.016 0)
+		(property "Value" "0.1u"
+			(at 278.13 255.0159 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54408,6 +57744,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5149201"
+			(at 39.116 411.861 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7840c3a2-d87c-4d5e-92b2-880d43b19033")
 		)
@@ -54513,7 +57858,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 365.379 235.839 0)
 			(effects
 				(font
@@ -54619,6 +57964,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 39.243 440.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 39.243 440.944 0)
 			(effects
 				(font
@@ -54760,6 +58114,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 292.1 467.868 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 292.1 467.868 0)
 			(effects
 				(font
@@ -55208,7 +58571,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 334.264 272.796 0)
 			(effects
 				(font
@@ -55595,6 +58958,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C13738"
+			(at 35.56 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3c429143-d812-4742-ae16-8ab43cc4ad25")
 		)
@@ -55911,7 +59283,7 @@
 		(fields_autoplaced yes)
 		(uuid "de85a7ed-5618-461d-bc1a-ec4d14c0ecb5")
 		(property "Reference" "HECC22"
-			(at 347.726 289.687 0)
+			(at 347.98 289.6869 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55919,8 +59291,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 347.726 292.227 0)
+		(property "Value" "0.1u"
+			(at 347.98 292.2269 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55997,7 +59369,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 366.903 272.669 0)
 			(effects
 				(font
@@ -56242,6 +59614,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5149201"
+			(at 188.468 439.801 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "36634041-8e2f-4aae-a733-30ed82d67033")
 		)
@@ -56382,6 +59763,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5149201"
+			(at 319.024 411.226 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fb7eaf41-cc2d-41a9-9738-3c78a1c67786")
 		)
@@ -56421,7 +59811,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 300.863 272.796 0)
 			(effects
 				(font
@@ -56476,6 +59866,90 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "HEC21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:SK6812")
+		(at 212.979 411.734 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dff83a48-df33-4898-b240-cfe646d891c7")
+		(property "Reference" "LED8"
+			(at 223.139 408.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812"
+			(at 223.139 411.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "project:SK6812-MINI-E"
+			(at 214.249 419.354 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
+			(at 215.519 421.259 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 212.979 411.734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
+			(at 212.979 411.734 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e1b4405a-6c0a-482e-b347-cbded0aecfe6")
+		)
+		(pin "2"
+			(uuid "de6bf6bf-a4e3-4396-8aaf-97d58c0340e3")
+		)
+		(pin "3"
+			(uuid "647ab8b4-384f-41f1-9285-3bbc61e86f9b")
+		)
+		(pin "4"
+			(uuid "aa760d04-f4ea-45d9-a530-073ff8c72b55")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "LED8")
 					(unit 1)
 				)
 			)
@@ -56593,6 +60067,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 292.608 411.353 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 292.608 411.353 0)
 			(effects
 				(font
@@ -56832,7 +60315,7 @@
 		(fields_autoplaced yes)
 		(uuid "e388c61e-a033-4da4-a256-48b20f001810")
 		(property "Reference" "HECC3"
-			(at 115.316 252.603 0)
+			(at 115.57 252.6029 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -56840,8 +60323,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 115.316 255.143 0)
+		(property "Value" "0.1u"
+			(at 115.57 255.1429 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -56895,6 +60378,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "HECC3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 410.21 190.5 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3c09d0f-6acd-4e22-a541-6bb701a1c546")
+		(property "Reference" "KEY33"
+			(at 415.29 189.5474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 415.29 192.0874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 412.115 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 412.115 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 410.21 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0fd9a66b-e5a6-4734-ba20-49684712ac6b")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY33")
 					(unit 1)
 				)
 			)
@@ -57027,6 +60577,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "#PWR0264")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 280.67 190.5 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5e12aac-c1e3-48a2-a1c7-b591cb1d3e85")
+		(property "Reference" "KEY27"
+			(at 285.75 189.5474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 285.75 192.0874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 282.575 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 282.575 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 280.67 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "78b2823f-823c-45b5-9c04-953abbf7af7b")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY27")
 					(unit 1)
 				)
 			)
@@ -57331,7 +60948,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 234.696 309.88 0)
 			(effects
 				(font
@@ -57436,6 +61053,15 @@
 		)
 		(property "Description" ""
 			(at 260.985 61.595 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25076"
+			(at 260.985 61.595 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57801,7 +61427,7 @@
 		(fields_autoplaced yes)
 		(uuid "ea289489-8501-4742-96be-600f18af1da7")
 		(property "Reference" "HECC16"
-			(at 148.336 289.687 0)
+			(at 147.32 289.6869 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57809,8 +61435,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 148.336 292.227 0)
+		(property "Value" "0.1u"
+			(at 147.32 292.2269 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57952,7 +61578,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 267.335 272.669 0)
 			(effects
 				(font
@@ -58242,7 +61868,7 @@
 		(fields_autoplaced yes)
 		(uuid "ed3a33c3-080c-41ed-9076-3a054f90cfe3")
 		(property "Reference" "HECC28"
-			(at 182.626 326.136 0)
+			(at 182.88 326.1359 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -58250,8 +61876,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 182.626 328.676 0)
+		(property "Value" "0.1u"
+			(at 182.88 328.6759 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -59124,6 +62750,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C23137"
+			(at 242.57 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f8523a7a-c1d0-4dd3-bf74-0c9833a81d5b")
 		)
@@ -59157,7 +62792,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 37.465 235.585 0)
 			(effects
 				(font
@@ -59434,7 +63069,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 134.112 272.796 0)
 			(effects
 				(font
@@ -59678,6 +63313,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5149201"
+			(at 238.633 467.868 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e817093f-9751-4cad-be84-c50237755450")
 		)
@@ -59884,6 +63528,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 153.133 152.908 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "eff19742-7f78-452c-831d-18c8f5390db5")
 		)
@@ -60019,6 +63672,42 @@
 				(hide yes)
 			)
 		)
+		(property "Display value" "4.7uF"
+			(at 0 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23733"
+			(at 0 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05A475MP5NRNC"
+			(at 0 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg" "Samsung"
+			(at 0 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6cdb5330-2963-4262-ba1c-e16c2a5ef193")
 		)
@@ -60080,6 +63769,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 162.56 467.868 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C5149201"
 			(at 162.56 467.868 0)
 			(effects
 				(font
@@ -60259,6 +63957,140 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 389.89 205.74 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fac56e10-2ed9-4e21-9b6b-584f6df59a66")
+		(property "Reference" "KEY40"
+			(at 394.97 204.7874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 394.97 207.3274 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.25U"
+			(at 391.795 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 391.795 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 389.89 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3e5afa21-696f-4ec4-b92d-86fc1c70fac1")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 295.91 205.74 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb3f8f50-77a7-469e-b8bb-15659f0a803c")
+		(property "Reference" "KEY38"
+			(at 300.99 204.7874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 300.99 207.3274 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_2.75U"
+			(at 297.815 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 297.815 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 295.91 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d4199777-d772-468f-8e9c-246e2dd69953")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 138.43 311.785 0)
 		(unit 1)
@@ -60394,6 +64226,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 300.99 190.5 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fba42ef6-198b-4ec9-a3ac-cdc31b370c73")
+		(property "Reference" "KEY28"
+			(at 306.07 189.5474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 306.07 192.0874 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 302.895 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 302.895 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 300.99 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fa0466b4-63a7-4399-85eb-4f1e30ccd142")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 166.497 404.241 270)
 		(unit 1)
@@ -60506,6 +64405,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 277.495 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
 			(at 277.495 34.925 0)
 			(effects
 				(font
@@ -60670,6 +64578,73 @@
 			(project "feb42"
 				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
 					(reference "LEDC11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:Housing_Pad")
+		(at 255.27 175.26 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fdee97fe-a670-4be9-abb1-75fdb7fa08fc")
+		(property "Reference" "KEY15"
+			(at 260.35 174.3074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 260.35 176.8474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "project:HE_Switch_1.0U"
+			(at 257.175 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 257.175 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch placement footprint"
+			(at 255.27 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d83d47d-3248-4d1b-908a-18283602538b")
+		)
+		(instances
+			(project "feb42"
+				(path "/2e3ad76c-b131-48f6-aba9-2cacea7e39ac"
+					(reference "KEY15")
 					(unit 1)
 				)
 			)

@@ -6,89 +6,89 @@
 // Tabbing state management using flags
 enum { TAB_NONE = 0, TAB_CTL = 1 << 0, TAB_GUI = 1 << 1, TAB_ALT = 1 << 2 };
 
-uint8_t _tab_flags   = TAB_NONE;
-bool    _tab_enabled = false;
+uint8_t TAB_FLAGS      = TAB_NONE;
+bool    TABBING_ACTIVE = false;
 
 void exec_tabbing(uint16_t keycode, keyrecord_t *record) {
   uint8_t layer = get_highest_layer(layer_state);
   if (layer == GAME) return;
 
   bool pressed = record->event.pressed;
-  if (keycode == KC_LCTL) _tab_flags = pressed ? (_tab_flags | TAB_CTL) : (_tab_flags & ~TAB_CTL);
-  if (keycode == KC_LGUI) _tab_flags = pressed ? (_tab_flags | TAB_GUI) : (_tab_flags & ~TAB_GUI);
-  if (keycode == KC_LALT) _tab_flags = pressed ? (_tab_flags | TAB_ALT) : (_tab_flags & ~TAB_ALT);
+  if (keycode == KC_LCTL) TAB_FLAGS = pressed ? (TAB_FLAGS | TAB_CTL) : (TAB_FLAGS & ~TAB_CTL);
+  if (keycode == KC_LGUI) TAB_FLAGS = pressed ? (TAB_FLAGS | TAB_GUI) : (TAB_FLAGS & ~TAB_GUI);
+  if (keycode == KC_LALT) TAB_FLAGS = pressed ? (TAB_FLAGS | TAB_ALT) : (TAB_FLAGS & ~TAB_ALT);
 
-  if (!pressed || keycode != KC_TAB || _tab_enabled || _tab_flags == TAB_NONE) return;
+  if (!pressed || keycode != KC_TAB || TABBING_ACTIVE || TAB_FLAGS == TAB_NONE) return;
 
   if (CURRENT_OS == OS_MAC) {
-    if (_tab_flags & TAB_ALT) {
+    if (TAB_FLAGS & TAB_ALT) {
       unregister_code16(KC_LALT);
       register_code16(KC_LGUI);
     }
-    if (_tab_flags & TAB_GUI) {
+    if (TAB_FLAGS & TAB_GUI) {
       unregister_code16(KC_LGUI);
       register_code16(KC_LCTL);
     }
   }
 
   layer_move(LOWER);
-  _tab_enabled = true;
+  TABBING_ACTIVE = true;
 }
 
 void release_tabbing(uint16_t keycode) {
-  if (!_tab_enabled) return;
+  if (!TABBING_ACTIVE) return;
 
   if (CURRENT_OS == OS_MAC) {
     if (keycode == KC_LALT) unregister_code16(KC_LGUI);
     if (keycode == KC_LGUI) unregister_code16(KC_LCTL);
   }
 
-  if (!(_tab_flags & (TAB_CTL | TAB_GUI | TAB_ALT))) {
+  if (!(TAB_FLAGS & (TAB_CTL | TAB_GUI | TAB_ALT))) {
     layer_move(BASE);
-    _tab_enabled = false;
+    TABBING_ACTIVE = false;
   }
 }
 
 // In-game stats toggle logic
-bool     _stats_enabled = false;
-bool     _stats_exec    = false;
-uint8_t  _stats_state   = 0;
-uint16_t _stats_time    = 0;
-uint16_t _stats_timer   = 0;
-bool     _stats_running = false;
-bool     _stats_caps    = false;
+bool     STATS_ACTIVE  = false;
+bool     STATS_EXEC    = false;
+uint8_t  STATS_STATE   = 0;
+uint16_t STATS_TIME    = 0;
+uint16_t STATS_TIMER   = 0;
+bool     STATS_RUNNING = false;
+bool     STATS_CAPS    = false;
 
 bool exec_stats(uint16_t keycode, keyrecord_t *record) {
   if (keycode != CK_STATS) return false;
-  _stats_enabled = record->event.pressed;
-  if (!_stats_enabled) return false;
+  STATS_ACTIVE = record->event.pressed;
+  if (!STATS_ACTIVE) return false;
 
-  _stats_exec  = true;
-  _stats_state = (timer_elapsed(_stats_timer) < _stats_time) ? 1 : 0;
-  _stats_timer = timer_read();
+  STATS_EXEC  = true;
+  STATS_STATE = (timer_elapsed(STATS_TIMER) < STATS_TIME) ? 1 : 0;
+  STATS_TIMER = timer_read();
   return true;
 }
 
 void scan_stats(void) {
-  if (!_stats_exec) return;
+  if (!STATS_EXEC) return;
 
-  if (!_stats_enabled) {
-    if (!_stats_running) return;
-    _stats_exec = false;
+  if (!STATS_ACTIVE) {
+    if (!STATS_RUNNING) return;
+    STATS_EXEC = false;
     unregister_code16(KC_TAB);
     unregister_code16(KC_CAPS);
-    if (_stats_caps) tap_code16(KC_CAPS);
-    _stats_caps = _stats_running = false;
-  } else if (!_stats_running) {
-    if (_stats_state == 0) register_code16(KC_TAB);
-    if (_stats_state == 1) register_code16(KC_CAPS);
-    _stats_caps    = (_stats_state == 1);
-    _stats_running = true;
+    if (STATS_CAPS) tap_code16(KC_CAPS);
+    STATS_CAPS = STATS_RUNNING = false;
+  } else if (!STATS_RUNNING) {
+    if (STATS_STATE == 0) register_code16(KC_TAB);
+    if (STATS_STATE == 1) register_code16(KC_CAPS);
+    STATS_CAPS    = (STATS_STATE == 1);
+    STATS_RUNNING = true;
   }
 }
 
 // Snaptap handling
-uint16_t _snap_tap[2] = {KC_NO, KC_NO};
+uint16_t SNAP_TAP[2] = {KC_NO, KC_NO};
 
 bool exec_snaptap(uint16_t keycode, keyrecord_t *record) {
   if (get_highest_layer(layer_state) != GAME || (keycode != KC_A && keycode != KC_D)) return false;
@@ -97,20 +97,20 @@ bool exec_snaptap(uint16_t keycode, keyrecord_t *record) {
   bool     pressed   = record->event.pressed;
 
   if (pressed) {
-    if (_snap_tap[0] != keycode) {
-      if (_snap_tap[0] != KC_NO) unregister_code16(_snap_tap[0]);
-      _snap_tap[1] = _snap_tap[0];
-      _snap_tap[0] = keycode;
+    if (SNAP_TAP[0] != keycode) {
+      if (SNAP_TAP[0] != KC_NO) unregister_code16(SNAP_TAP[0]);
+      SNAP_TAP[1] = SNAP_TAP[0];
+      SNAP_TAP[0] = keycode;
       register_code16(keycode);
     }
   } else {
-    if (keycode == _snap_tap[0]) {
+    if (keycode == SNAP_TAP[0]) {
       unregister_code16(keycode);
-      if (_snap_tap[1] == other_key) register_code16(other_key);
-      _snap_tap[0] = _snap_tap[1];
-      _snap_tap[1] = KC_NO;
-    } else if (keycode == _snap_tap[1]) {
-      _snap_tap[1] = KC_NO;
+      if (SNAP_TAP[1] == other_key) register_code16(other_key);
+      SNAP_TAP[0] = SNAP_TAP[1];
+      SNAP_TAP[1] = KC_NO;
+    } else if (keycode == SNAP_TAP[1]) {
+      SNAP_TAP[1] = KC_NO;
     }
   }
 
@@ -118,16 +118,16 @@ bool exec_snaptap(uint16_t keycode, keyrecord_t *record) {
 }
 
 // Hyper key handling
-bool     _hype_active = false;
-int      _hype_taps   = 0;
-uint16_t _hype_timer  = 0;
+bool     HYPE_ACTIVE = false;
+int      HYPE_TAPS   = 0;
+uint16_t HYPE_TIMER  = 0;
 
 bool exec_hype(uint16_t keycode, keyrecord_t *record) {
   if (keycode != CK_HYPE) return false;
-  _hype_active = record->event.pressed;
-  _hype_timer  = timer_read();
-  if (_hype_active) {
-    _hype_taps++;
+  HYPE_ACTIVE = record->event.pressed;
+  HYPE_TIMER  = timer_read();
+  if (HYPE_ACTIVE) {
+    HYPE_TAPS++;
   } else {
     unregister_code16(KC_LSFT);
   }
@@ -135,13 +135,13 @@ bool exec_hype(uint16_t keycode, keyrecord_t *record) {
 }
 
 void scan_hype(void) {
-  if (!_hype_active && timer_elapsed(_hype_timer) > TAPPING_TERM_SLOW) {
-    if (_hype_taps > 0) _hype_taps--;
+  if (!HYPE_ACTIVE && timer_elapsed(HYPE_TIMER) > TAPPING_TERM_SLOW) {
+    if (HYPE_TAPS > 0) HYPE_TAPS--;
   }
-  if (_hype_active) {
-    if (_hype_taps == 2) {
+  if (HYPE_ACTIVE) {
+    if (HYPE_TAPS == 2) {
       tap_code16(HYPR(KC_M));
-      _hype_taps = 0;
+      HYPE_TAPS = 0;
     } else {
       register_code16(KC_LSFT);
     }

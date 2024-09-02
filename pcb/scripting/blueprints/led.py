@@ -9,6 +9,7 @@ class LEDBlueprint(BluePrint):
     self.set_anchor(self.position + vec2(0.0, 5.08))
 
     led = create_footprint("SK6812-MINI-E", f"LED{self.index}")
+    log(dir(led))
     led.SetPosition(self.anchor.to_kicad())
 
     self.add(led)
