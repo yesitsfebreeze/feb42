@@ -69,24 +69,24 @@
 	)
 	(attr through_hole)
 	(fp_line
-		(start -0.375 0.375)
-		(end 0.375 -0.375)
+		(start -1 1)
+		(end 1 -1)
 		(stroke
-			(width 0.1)
+			(width 0.35)
 			(type default)
 		)
 		(layer "B.SilkS")
-		(uuid "795968cd-160e-4dc7-b5b0-948a77120b19")
+		(uuid "767ac663-c9ce-4cff-81ff-5e114c1a290d")
 	)
 	(fp_line
-		(start 0.375 0.375)
-		(end -0.375 -0.375)
+		(start 1 1)
+		(end -1 -1)
 		(stroke
-			(width 0.1)
+			(width 0.35)
 			(type default)
 		)
 		(layer "B.SilkS")
-		(uuid "b1134a4d-1b90-4359-a30b-9002ebfad2ec")
+		(uuid "17c7b837-666b-438d-8e3b-09a5738c61f5")
 	)
 	(fp_circle
 		(center -12 -8)
